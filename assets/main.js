@@ -27,6 +27,25 @@
     });
   }
 
+  /* ---- Language toggle (KA / EN nav labels) ---- */
+  var langBtns = doc.querySelectorAll(".langtoggle__btn");
+  var langEls = doc.querySelectorAll("[data-kn][data-en]");
+  if (langBtns.length) {
+    var setLang = function (lang) {
+      langEls.forEach(function (el) {
+        var txt = el.getAttribute(lang === "en" ? "data-en" : "data-kn");
+        if (txt) el.textContent = txt;
+        el.setAttribute("lang", lang === "en" ? "en" : "kn");
+      });
+      langBtns.forEach(function (b) {
+        b.classList.toggle("is-on", b.getAttribute("data-lang") === lang);
+      });
+    };
+    langBtns.forEach(function (b) {
+      b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+    });
+  }
+
   /* ---- Sticky header shadow ---- */
   var header = doc.querySelector(".header");
   if (header) {

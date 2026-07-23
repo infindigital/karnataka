@@ -16,14 +16,6 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='16' fill='%23F5B301'/%3E%3Crect y='16' width='32' height='16' fill='%23C4161C'/%3E%3C/svg%3E" />
 </head>
 <body>
-  <!-- Top ribbon -->
-  <div class="ribbon">
-    <div class="container ribbon__inner">
-      <span class="ribbon__flag" aria-hidden="true"></span>
-      <p>ಕನ್ನಡ ಕಟ್ಟೋಣ, ಕರ್ನಾಟಕ ಉಳಿಸೋಣ — <em>Let us build Kannada, let us protect Karnataka.</em></p>
-    </div>
-  </div>
-
   <!-- Header / Nav -->
   <header class="header" id="top">
     <div class="container header__inner">
@@ -38,14 +30,25 @@
       </a>
 
       <nav class="nav" id="nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#mission">Our Cause</a>
-        <a href="#work">What We Do</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#video">Video</a>
-        <a href="#movements">Movements</a>
-        <a href="#join" class="nav__cta">Join the Movement</a>
+        <a href="#top" class="is-active" data-kn="ಮುಖಪುಟ" data-en="Home">ಮುಖಪುಟ</a>
+        <a href="#about" data-kn="ನಮ್ಮ ಸಂಘಟನೆಯ ಬಗ್ಗೆ" data-en="About Us">ನಮ್ಮ ಸಂಘಟನೆಯ ಬಗ್ಗೆ</a>
+        <a href="#mission" data-kn="ನಮ್ಮ ನಾಯಕರು" data-en="Our Leaders">ನಮ್ಮ ನಾಯಕರು</a>
+        <a href="#video" data-kn="ಮಾಧ್ಯಮ ವರದಿ" data-en="Media">ಮಾಧ್ಯಮ ವರದಿ</a>
+        <a href="#work" data-kn="ಸಾಮಾಜಿಕ ಕಾರ್ಯಕ್ರಮಗಳು" data-en="Social Work">ಸಾಮಾಜಿಕ ಕಾರ್ಯಕ್ರಮಗಳು</a>
+        <a href="#movements" data-kn="ಹೋರಾಟಗಳು" data-en="Movements">ಹೋರಾಟಗಳು</a>
+        <a href="#gallery" data-kn="ಗ್ಯಾಲರಿ" data-en="Gallery">ಗ್ಯಾಲರಿ</a>
       </nav>
+
+      <div class="header__tools">
+        <div class="langtoggle" role="group" aria-label="Language">
+          <button type="button" class="langtoggle__btn is-on" data-lang="kn">KA</button>
+          <button type="button" class="langtoggle__btn" data-lang="en">EN</button>
+        </div>
+        <a href="#gallery" class="iconbtn" aria-label="Gallery photos">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/></svg>
+        </a>
+        <a href="#join" class="btn btn--join" data-kn="ಸೇರಿ" data-en="Join">ಸೇರಿ</a>
+      </div>
 
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
@@ -54,57 +57,38 @@
   </header>
 
   <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero__bg" aria-hidden="true">
-        <span class="hero__glow hero__glow--y"></span>
-        <span class="hero__glow hero__glow--r"></span>
-        <span class="hero__grid"></span>
-      </div>
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <span class="eyebrow"><span class="eyebrow__dot"></span> Established 1999 · Bengaluru, Karnataka</span>
-          <h1 class="hero__title">
-            One Land. One Language.
-            <span class="hero__title-accent">One Kannada Spirit.</span>
-          </h1>
-          <p class="hero__kn" lang="kn">ನಾಡು–ನುಡಿ–ನೆಲ–ಜಲ ರಕ್ಷಣೆಗಾಗಿ ಕನ್ನಡಿಗರ ದನಿ</p>
-          <p class="hero__lead">
-            Karnataka Rakshana Vedike is a non-political people's movement standing up
-            for the Kannada language, culture, land, water and the livelihood of every
-            Kannadiga — from the villages of Karnataka to Kannada hearts across the world.
-          </p>
-          <div class="hero__actions">
-            <a href="#join" class="btn btn--primary">Become a Member <span aria-hidden="true">→</span></a>
-            <a href="#mission" class="btn btn--ghost">Our Cause</a>
-          </div>
-          <ul class="hero__proof">
-            <li><strong data-count="6" data-suffix="M+">0</strong><span>Members</span></li>
-            <li><strong data-count="12000" data-suffix="+">0</strong><span>Branches</span></li>
-            <li><strong data-count="30" data-suffix="">0</strong><span>Districts</span></li>
-            <li><strong data-count="25" data-suffix="+ yrs">0</strong><span>On the ground</span></li>
-          </ul>
-        </div>
+    <!-- Hero banner -->
+    <section class="banner" aria-label="Featured">
+      <span class="banner__bg" aria-hidden="true"></span>
+      <span class="banner__rays" aria-hidden="true"></span>
+      <span class="banner__particles" aria-hidden="true"></span>
+      <span class="banner__flag banner__flag--l" aria-hidden="true"></span>
+      <span class="banner__flag banner__flag--r" aria-hidden="true"></span>
 
-        <aside class="hero__card" aria-label="Kannada flag">
-          <div class="flagcard">
-            <div class="flagcard__flag">
-              <span class="flagcard__band flagcard__band--y"></span>
-              <span class="flagcard__band flagcard__band--r"></span>
-              <span class="flagcard__pole"></span>
-            </div>
-            <div class="flagcard__body">
-              <h3>The Arishina–Kumkuma Flag</h3>
-              <p lang="kn">ಅರಿಶಿನ–ಕುಂಕುಮ ಬಾವುಟ</p>
-              <p class="flagcard__note">
-                Turmeric-yellow for prosperity and peace, vermilion-red for courage —
-                the colours Kannadigas rally behind.
-              </p>
-            </div>
+      <div class="banner__inner">
+        <!-- Left: leader spotlight -->
+        <figure class="banner__leader">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3G4bnJPvIHipa5YfpqpDWYcQAig/hf_20260723_183522_e2e7af86-49af-4fb5-9db2-3a885f562745.png" alt="Karnataka Rakshana Vedike leader addressing a gathering" onerror="this.closest('.banner__leader').classList.add('is-fallback')" />
+          <span class="banner__mapword" aria-hidden="true">ಕನ್ನಡ</span>
+          <figcaption class="nameplate">
+            <span class="nameplate__k" lang="kn">ನಮ್ಮ ನಾಯಕರು</span>
+            <span class="nameplate__r" lang="kn">ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ · ರಾಜ್ಯಾಧ್ಯಕ್ಷರು</span>
+          </figcaption>
+        </figure>
+
+        <!-- Right: circular event photo -->
+        <figure class="banner__circle">
+          <span class="banner__ring" aria-hidden="true"></span>
+          <div class="banner__oval">
+            <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3G4bnJPvIHipa5YfpqpDWYcQAig/hf_20260723_183523_25dbb8b4-a250-4596-9c49-06d44efdfa29.png" alt="Karnataka Rakshana Vedike felicitation ceremony" onerror="this.closest('.banner__oval').classList.add('is-fallback')" />
+            <span class="banner__badge" aria-hidden="true"><strong>25</strong><small lang="kn">ವರ್ಷ</small></span>
           </div>
-        </aside>
+        </figure>
       </div>
-      <a href="#about" class="hero__scroll" aria-label="Scroll to content"><span></span></a>
+
+      <div class="banner__dots" aria-hidden="true">
+        <span class="is-on"></span><span></span><span></span>
+      </div>
     </section>
 
     <!-- Marquee -->
