@@ -129,6 +129,51 @@
     });
   }
 
+  /* ---- Gallery lightbox ---- */
+  var lightbox = doc.getElementById("lightbox");
+  var lightboxImg = doc.getElementById("lightboxImg");
+  var lightboxCap = doc.getElementById("lightboxCap");
+  var lightboxClose = doc.getElementById("lightboxClose");
+  if (lightbox && lightboxImg) {
+    var closeLightbox = function () {
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden", "true");
+      doc.body.style.overflow = "";
+      lightboxImg.src = "";
+    };
+    doc.querySelectorAll(".shot").forEach(function (shot) {
+      shot.addEventListener("click", function () {
+        // don't open the lightbox for images that failed to load
+        if (shot.classList.contains("shot--fallback")) return;
+        var full = shot.getAttribute("data-full");
+        var cap = shot.getAttribute("data-cap") || "";
+        if (!full) return;
+        lightboxImg.src = full;
+        lightboxImg.alt = cap;
+        lightboxCap.textContent = cap;
+        lightbox.classList.add("open");
+        lightbox.setAttribute("aria-hidden", "false");
+        doc.body.style.overflow = "hidden";
+      });
+    });
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    doc.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
+    });
+  }
+
+  /* ---- Video: swap to real player once metadata loads ---- */
+  var video = doc.getElementById("flagVideo");
+  if (video) {
+    video.addEventListener("loadeddata", function () {
+      var fb = video.parentNode.querySelector(".video__fallback");
+      if (fb) fb.style.display = "none";
+    });
+  }
+
   /* ---- Active nav link highlighting ---- */
   var sections = doc.querySelectorAll("section[id]");
   var navLinks = doc.querySelectorAll('.nav a[href^="#"]');
