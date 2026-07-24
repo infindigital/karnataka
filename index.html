@@ -57,37 +57,27 @@
   </header>
 
   <main>
-    <!-- Hero banner -->
-    <section class="banner" aria-label="Featured">
-      <span class="banner__bg" aria-hidden="true"></span>
-      <span class="banner__rays" aria-hidden="true"></span>
-      <span class="banner__particles" aria-hidden="true"></span>
-      <span class="banner__flag banner__flag--l" aria-hidden="true"></span>
-      <span class="banner__flag banner__flag--r" aria-hidden="true"></span>
-
-      <div class="banner__inner">
-        <!-- Left: leader spotlight -->
-        <figure class="banner__leader">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3G4bnJPvIHipa5YfpqpDWYcQAig/hf_20260723_183522_e2e7af86-49af-4fb5-9db2-3a885f562745.png" alt="Karnataka Rakshana Vedike leader addressing a gathering" onerror="this.closest('.banner__leader').classList.add('is-fallback')" />
-          <span class="banner__mapword" aria-hidden="true">ಕನ್ನಡ</span>
-          <figcaption class="nameplate">
-            <span class="nameplate__k" lang="kn">ನಮ್ಮ ನಾಯಕರು</span>
-            <span class="nameplate__r" lang="kn">ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ · ರಾಜ್ಯಾಧ್ಯಕ್ಷರು</span>
-          </figcaption>
+    <!-- Hero banner slider -->
+    <section class="hero-slider" id="heroSlider" aria-label="Featured banners" aria-roledescription="carousel">
+      <div class="hero-slider__track">
+        <figure class="hslide is-active" data-label="ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ">
+          <img src="https://karnatakarakshanavedike.com/Photos/banner/banner-2.jpg" alt="Karnataka Rakshana Vedike banner" loading="eager" onerror="this.closest('.hslide').classList.add('is-fallback')" />
         </figure>
-
-        <!-- Right: circular event photo -->
-        <figure class="banner__circle">
-          <span class="banner__ring" aria-hidden="true"></span>
-          <div class="banner__oval">
-            <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3G4bnJPvIHipa5YfpqpDWYcQAig/hf_20260723_183523_25dbb8b4-a250-4596-9c49-06d44efdfa29.png" alt="Karnataka Rakshana Vedike felicitation ceremony" onerror="this.closest('.banner__oval').classList.add('is-fallback')" />
-            <span class="banner__badge" aria-hidden="true"><strong>25</strong><small lang="kn">ವರ್ಷ</small></span>
-          </div>
+        <figure class="hslide" data-label="ನಾಡು ನುಡಿ ನೆಲ ಜಲ">
+          <img src="https://karnatakarakshanavedike.com/Photos/banner/banner-3.jpg" alt="Karnataka Rakshana Vedike banner" loading="lazy" onerror="this.closest('.hslide').classList.add('is-fallback')" />
+        </figure>
+        <figure class="hslide" data-label="ಜೈ ಕರ್ನಾಟಕ ಮಾತೆ">
+          <img src="https://karnatakarakshanavedike.com/Photos/banner/banner-4.jpg" alt="Karnataka Rakshana Vedike banner" loading="lazy" onerror="this.closest('.hslide').classList.add('is-fallback')" />
         </figure>
       </div>
 
-      <div class="banner__dots" aria-hidden="true">
-        <span class="is-on"></span><span></span><span></span>
+      <button class="hero-slider__arrow hero-slider__arrow--prev" id="heroPrev" aria-label="Previous banner">&#8249;</button>
+      <button class="hero-slider__arrow hero-slider__arrow--next" id="heroNext" aria-label="Next banner">&#8250;</button>
+
+      <div class="hero-slider__dots" id="heroDots" role="tablist" aria-label="Choose banner">
+        <button class="is-on" aria-label="Banner 1"></button>
+        <button aria-label="Banner 2"></button>
+        <button aria-label="Banner 3"></button>
       </div>
     </section>
 

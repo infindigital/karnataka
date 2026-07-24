@@ -148,6 +148,54 @@
     });
   }
 
+  /* ---- Hero banner slider ---- */
+  var slider = doc.getElementById("heroSlider");
+  if (slider) {
+    var slides = Array.prototype.slice.call(slider.querySelectorAll(".hslide"));
+    var dots = Array.prototype.slice.call(slider.querySelectorAll("#heroDots button"));
+    var idx = 0;
+    var timer = null;
+    var INTERVAL = 5500;
+
+    var go = function (n) {
+      idx = (n + slides.length) % slides.length;
+      slides.forEach(function (s, i) { s.classList.toggle("is-active", i === idx); });
+      dots.forEach(function (d, i) { d.classList.toggle("is-on", i === idx); });
+    };
+    var next = function () { go(idx + 1); };
+    var prev = function () { go(idx - 1); };
+    var start = function () {
+      if (reduceMotion) return;
+      stop();
+      timer = setInterval(next, INTERVAL);
+    };
+    var stop = function () { if (timer) { clearInterval(timer); timer = null; } };
+
+    var nextBtn = doc.getElementById("heroNext");
+    var prevBtn = doc.getElementById("heroPrev");
+    if (nextBtn) nextBtn.addEventListener("click", function () { next(); start(); });
+    if (prevBtn) prevBtn.addEventListener("click", function () { prev(); start(); });
+    dots.forEach(function (d, i) {
+      d.addEventListener("click", function () { go(i); start(); });
+    });
+
+    slider.addEventListener("mouseenter", stop);
+    slider.addEventListener("mouseleave", start);
+
+    // basic swipe support
+    var startX = null;
+    slider.addEventListener("touchstart", function (e) { startX = e.touches[0].clientX; }, { passive: true });
+    slider.addEventListener("touchend", function (e) {
+      if (startX === null) return;
+      var dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) { dx < 0 ? next() : prev(); start(); }
+      startX = null;
+    });
+
+    go(0);
+    start();
+  }
+
   /* ---- Gallery lightbox ---- */
   var lightbox = doc.getElementById("lightbox");
   var lightboxImg = doc.getElementById("lightboxImg");
