@@ -5,10 +5,10 @@ The hero slider on the homepage uses `banner-2.jpg`, `banner-3.jpg`, and
 
 ## Populate this folder
 
-The website markup already points here first and automatically falls back to
-the live URLs on `karnatakarakshanavedike.com` if a local file is missing, so
-the site works either way. To store permanent local copies (recommended so the
-site doesn't depend on hot-linking), run:
+The website markup already points here first and automatically falls back to a
+permanent CDN copy of each banner if a local file is missing, so the site works
+either way out of the box. To store the files locally in the repo (recommended
+so nothing depends on an external host), run:
 
 ```bash
 bash assets/media/banner/fetch-banners.sh
