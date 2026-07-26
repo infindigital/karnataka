@@ -121,6 +121,20 @@
     counters.forEach(runCounter);
   }
 
+  /* ---- Recent struggles carousel arrows ---- */
+  var strTrack = doc.getElementById("strugglesTrack");
+  if (strTrack) {
+    var strScroll = function (dir) {
+      var card = strTrack.querySelector(".struggle");
+      var step = card ? card.getBoundingClientRect().width + 24 : 360;
+      strTrack.scrollBy({ left: dir * step, behavior: "smooth" });
+    };
+    var strPrev = doc.getElementById("strPrev");
+    var strNext = doc.getElementById("strNext");
+    if (strPrev) strPrev.addEventListener("click", function () { strScroll(-1); });
+    if (strNext) strNext.addEventListener("click", function () { strScroll(1); });
+  }
+
   /* ---- Articles frame: subtle 3D tilt on hover ---- */
   var artFrame = doc.getElementById("articlesFrame");
   if (artFrame && !reduceMotion) {
