@@ -165,6 +165,25 @@
     });
   }
 
+  /* ---- Footer newsletter (front-end demo) ---- */
+  var newsForm = doc.getElementById("newsForm");
+  var newsNote = doc.getElementById("newsNote");
+  if (newsForm && newsNote) {
+    newsForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var input = newsForm.querySelector("input");
+      var val = (input && input.value || "").trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+        newsNote.style.color = "#fca5a5";
+        newsNote.textContent = "ದಯವಿಟ್ಟು ಸರಿಯಾದ ಇಮೇಲ್ ನಮೂದಿಸಿ.";
+        return;
+      }
+      newsNote.style.color = "#86efac";
+      newsNote.textContent = "ಧನ್ಯವಾದಗಳು! ನೀವು ಚಂದಾದಾರರಾಗಿದ್ದೀರಿ.";
+      newsForm.reset();
+    });
+  }
+
   /* ---- Join form (front-end demo) ---- */
   var form = doc.getElementById("joinForm");
   var note = doc.getElementById("joinNote");
