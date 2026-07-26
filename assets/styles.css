@@ -333,7 +333,7 @@ h1, h2, h3, h4 { line-height: 1.12; font-weight: 800; letter-spacing: -.02em; }
 .president { padding-bottom: clamp(4rem, 8vw, 7.5rem); background: linear-gradient(180deg, var(--paper-2), var(--paper)); }
 
 .president__hero { position: relative; display: grid; align-items: center; min-height: 560px; padding: clamp(3rem, 7vw, 6rem) 0; overflow: hidden; margin-bottom: clamp(2.4rem, 5vw, 3.6rem); }
-.president__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.president__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: right center; z-index: 0; }
 .president__hero::after { content: ""; position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(90deg, rgba(20,10,8,.74), rgba(20,10,8,.4) 55%, rgba(20,10,8,.12)); }
 .president__hero.is-nobg {
