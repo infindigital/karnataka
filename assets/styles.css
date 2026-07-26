@@ -411,6 +411,45 @@ h1, h2, h3, h4 { line-height: 1.12; font-weight: 800; letter-spacing: -.02em; }
   .heritage__list li { justify-content: center; }
 }
 
+/* ---------- Articles / Publications ---------- */
+.articles { background: linear-gradient(180deg, var(--paper), var(--paper-2)); }
+.articles__stage { position: relative; max-width: 960px; margin: 0 auto; }
+.articles__frame {
+  background: #1b1c1c; border: 1px solid rgba(255,255,255,.06);
+  border-radius: clamp(1.4rem, 4vw, 2.6rem); padding: clamp(.6rem, 2vw, 1.4rem);
+  box-shadow: 0 40px 80px -30px rgba(0,0,0,.6);
+  transform: perspective(1000px); transition: transform .5s var(--ease); will-change: transform;
+}
+.articles__notch { display: flex; justify-content: center; align-items: center; gap: .6rem; margin-bottom: .7rem; opacity: .4; }
+.articles__notch span:first-child { width: 8px; height: 8px; border-radius: 50%; background: #e5e2e1; }
+.articles__notch span:last-child { width: 48px; height: 6px; border-radius: 6px; background: #e5e2e1; }
+.articles__screen { position: relative; border-radius: clamp(.6rem, 2vw, 1.1rem); overflow: hidden; background: #000; min-height: 600px; }
+.articles__iframe { position: relative; z-index: 2; width: 100%; height: 100%; min-height: 600px; border: 0; display: block; }
+.articles__loading { position: absolute; inset: 0; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; background: #121212; color: #e5e2e1; font-weight: 700; letter-spacing: .05em; font-size: .85rem; }
+.articles__spinner { width: 46px; height: 46px; border-radius: 50%; border: 3px solid rgba(255,255,255,.15); border-top-color: var(--red); border-bottom-color: var(--red); animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.articles__bar { width: 96px; height: 5px; border-radius: 5px; background: #e5e2e1; opacity: .4; margin: .9rem auto 0; }
+.articles__edition { display: none; }
+@media (min-width: 1120px) {
+  .articles__edition { display: block; position: absolute; right: -3rem; top: 50%; transform: translateY(-50%) rotate(90deg); letter-spacing: .5em; font-size: .7rem; font-weight: 700; color: rgba(60,40,30,.28); white-space: nowrap; }
+}
+/* Fallback "open e-book" cover (used where the iframe can't load) */
+.articles__open { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.1rem; width: 100%; min-height: 600px; padding: 2rem; text-align: center; text-decoration: none; color: #fff; background: radial-gradient(120% 120% at 50% 0%, #3a1f1f, #121212 70%); }
+.articles__open .articles__book { font-size: 3.6rem; }
+.articles__open strong { font-size: 1.3rem; font-weight: 800; }
+.articles__open span.articles__hint { color: rgba(255,255,255,.6); font-size: .95rem; }
+.articles__openbtn { background: var(--yellow); color: var(--ink); font-weight: 800; padding: .8rem 1.6rem; border-radius: 999px; box-shadow: var(--shadow-md); transition: transform .3s var(--ease), background .3s; }
+.articles__open:hover .articles__openbtn { background: #ffd633; transform: translateY(-2px); }
+
+.articles__cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: clamp(2.4rem, 5vw, 3.5rem); }
+.artcard { background: var(--white); border: 1px solid var(--line); border-left: 4px solid var(--yellow); border-radius: 14px; padding: 1.4rem 1.3rem; box-shadow: var(--shadow-sm); transition: transform .3s var(--ease), box-shadow .3s; }
+.artcard:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.artcard h4 { display: flex; align-items: center; gap: .55rem; color: var(--red); font-size: 1.05rem; margin-bottom: .5rem; }
+.artcard h4 svg { width: 22px; height: 22px; flex: none; }
+.artcard p { color: var(--ink-2); font-size: .98rem; }
+@media (max-width: 820px) { .articles__cards { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .articles__frame { transition: none; } }
+
 /* ---------- Memories / Polaroid gallery ---------- */
 .memories { background: var(--paper-2); overflow: hidden; }
 .memories__head { text-align: center; margin-bottom: clamp(1.6rem, 4vw, 2.6rem); }

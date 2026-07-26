@@ -121,6 +121,22 @@
     counters.forEach(runCounter);
   }
 
+  /* ---- Articles frame: subtle 3D tilt on hover ---- */
+  var artFrame = doc.getElementById("articlesFrame");
+  if (artFrame && !reduceMotion) {
+    artFrame.addEventListener("mousemove", function (e) {
+      var r = artFrame.getBoundingClientRect();
+      var rx = ((e.clientY - r.top) - r.height / 2) / 55;
+      var ry = (r.width / 2 - (e.clientX - r.left)) / 55;
+      artFrame.style.transition = "none";
+      artFrame.style.transform = "perspective(1000px) rotateX(" + rx + "deg) rotateY(" + ry + "deg)";
+    });
+    artFrame.addEventListener("mouseleave", function () {
+      artFrame.style.transition = "transform .5s ease";
+      artFrame.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg)";
+    });
+  }
+
   /* ---- Join form (front-end demo) ---- */
   var form = doc.getElementById("joinForm");
   var note = doc.getElementById("joinNote");
