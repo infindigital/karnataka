@@ -424,9 +424,9 @@ h1, h2, h3, h4 { line-height: 1.12; font-weight: 800; letter-spacing: -.02em; }
 .works-slider__track { display: flex; width: max-content; animation: works-scroll 55s linear infinite; }
 .works-slider__mask:hover .works-slider__track { animation-play-state: paused; }
 .workcard {
-  position: relative; flex: 0 0 auto; margin-right: 1.5rem;
-  width: clamp(240px, 24vw, 300px); aspect-ratio: 1;
-  border-radius: 26px; overflow: hidden; background: var(--cream);
+  position: relative; flex: 0 0 auto; margin-right: 1rem;
+  width: clamp(150px, 15vw, 200px); aspect-ratio: 1;
+  border-radius: 20px; overflow: hidden; background: var(--cream);
   box-shadow: var(--shadow-md); transition: transform .3s var(--ease);
 }
 .workcard:hover { transform: translateY(-6px); }
