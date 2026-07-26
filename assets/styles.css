@@ -411,6 +411,36 @@ h1, h2, h3, h4 { line-height: 1.12; font-weight: 800; letter-spacing: -.02em; }
   .heritage__list li { justify-content: center; }
 }
 
+/* ---------- Jan-snehi works slider ---------- */
+.works-slider { background: var(--paper); overflow: hidden; }
+.works-slider__head { text-align: center; margin-bottom: clamp(2.2rem, 5vw, 3.4rem); }
+.works-slider__head .section__title { color: var(--ink); }
+.works-slider__rule { display: inline-block; width: 96px; height: 6px; border-radius: 6px; background: var(--red); margin-top: 1rem; }
+.works-slider__mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  overflow: hidden;
+}
+.works-slider__track { display: flex; width: max-content; animation: works-scroll 55s linear infinite; }
+.works-slider__mask:hover .works-slider__track { animation-play-state: paused; }
+.workcard {
+  position: relative; flex: 0 0 auto; margin-right: 1.5rem;
+  width: clamp(240px, 24vw, 300px); aspect-ratio: 1;
+  border-radius: 26px; overflow: hidden; background: var(--cream);
+  box-shadow: var(--shadow-md); transition: transform .3s var(--ease);
+}
+.workcard:hover { transform: translateY(-6px); }
+.workcard img { width: 100%; height: 100%; object-fit: cover; }
+.workcard__badge {
+  position: absolute; bottom: 12px; right: 12px; width: 30px; height: 30px;
+  display: grid; place-items: center; background: #fff; color: var(--ink);
+  border-radius: 50%; font-size: .85rem; font-weight: 800; box-shadow: var(--shadow-sm);
+}
+@keyframes works-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .works-slider__track { animation: none; overflow-x: auto; padding-bottom: .5rem; }
+}
+
 /* ---------- Statistics ---------- */
 .stats { padding: clamp(3.5rem, 7vw, 6rem) 0;
   background: radial-gradient(900px 500px at 50% -10%, rgba(245,179,1,.14), transparent 60%), linear-gradient(160deg, #171017, #11131a 70%); }
