@@ -411,6 +411,34 @@ h1, h2, h3, h4 { line-height: 1.12; font-weight: 800; letter-spacing: -.02em; }
   .heritage__list li { justify-content: center; }
 }
 
+/* ---------- Memories / Polaroid gallery ---------- */
+.memories { background: var(--paper-2); overflow: hidden; }
+.memories__head { text-align: center; margin-bottom: clamp(1.6rem, 4vw, 2.6rem); }
+.memories__head .section__title { color: var(--ink); }
+.memories__rule { display: inline-block; width: 96px; height: 6px; border-radius: 6px; background: var(--yellow); margin: 1rem 0 .9rem; }
+.memories__sub { color: var(--ink-3); font-size: 1.1rem; }
+.memories__mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  overflow: hidden; padding: 2.4rem 0;
+}
+.memories__track { display: flex; align-items: center; width: max-content; animation: mem-scroll 45s linear infinite; }
+.memories__mask:hover .memories__track { animation-play-state: paused; }
+.polaroid {
+  flex: 0 0 auto; margin: 0 1.4rem; position: relative;
+  background: #fff; padding: 14px 14px 42px; border-radius: 4px;
+  box-shadow: 0 16px 40px -16px rgba(40,20,10,.35);
+  transform: rotate(var(--rot, 0deg));
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.polaroid:hover { transform: scale(1.06) rotate(0deg); box-shadow: var(--shadow-lg); z-index: 5; }
+.polaroid img { width: 300px; height: 220px; object-fit: cover; display: block; background: var(--surface-container, #e5e2e1); }
+.polaroid figcaption { position: absolute; left: 0; right: 0; bottom: 12px; text-align: center; font-weight: 700; color: var(--ink-2); font-size: .98rem; }
+.polaroid__tape { position: absolute; top: -11px; left: 50%; transform: translateX(-50%) rotate(-3deg); width: 74px; height: 26px; background: rgba(252,212,0,.62); box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+@keyframes mem-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 560px) { .polaroid img { width: 220px; height: 165px; } }
+@media (prefers-reduced-motion: reduce) { .memories__track { animation: none; overflow-x: auto; } }
+
 /* ---------- Aims / Objectives ---------- */
 .aims { background: linear-gradient(180deg, var(--paper), var(--paper-2)); }
 .aims__grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
