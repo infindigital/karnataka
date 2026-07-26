@@ -228,7 +228,7 @@ h1, h2, h3, h4 { line-height: 1.12; font-weight: 800; letter-spacing: -.02em; }
 /* ---------- Hero banner slider ---------- */
 .hero-slider {
   position: relative; overflow: hidden; isolation: isolate;
-  height: clamp(240px, 40vw, 640px);
+  aspect-ratio: 3 / 1; max-height: 600px; min-height: 260px;
   background: linear-gradient(115deg, #f6b733 0%, #ef9d1e 34%, #d64b17 70%, #b41419 100%);
 }
 .hero-slider__track { position: absolute; inset: 0; }
@@ -240,9 +240,7 @@ h1, h2, h3, h4 { line-height: 1.12; font-weight: 800; letter-spacing: -.02em; }
 .hslide.is-active { opacity: 1; visibility: visible; z-index: 1; }
 .hslide img {
   width: 100%; height: 100%; object-fit: cover; object-position: center;
-  transform: scale(1.04); transition: transform 7s ease-out;
 }
-.hslide.is-active img { transform: scale(1); }
 /* graceful fallback when a banner image can't load */
 .hslide.is-fallback img { display: none; }
 .hslide.is-fallback::before {
