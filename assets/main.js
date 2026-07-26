@@ -121,6 +121,20 @@
     counters.forEach(runCounter);
   }
 
+  /* ---- Video library: thumbnail selects main frame ---- */
+  var vThumbs = doc.getElementById("videoThumbs");
+  var vMain = doc.getElementById("videoMain");
+  if (vThumbs && vMain) {
+    vThumbs.querySelectorAll(".vthumb").forEach(function (t) {
+      t.addEventListener("click", function () {
+        var full = t.getAttribute("data-full");
+        if (full) vMain.src = full;
+        vThumbs.querySelectorAll(".vthumb").forEach(function (x) { x.classList.remove("is-active"); });
+        t.classList.add("is-active");
+      });
+    });
+  }
+
   /* ---- Recent struggles carousel arrows ---- */
   var strTrack = doc.getElementById("strugglesTrack");
   if (strTrack) {

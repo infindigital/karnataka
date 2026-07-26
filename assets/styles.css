@@ -411,6 +411,30 @@ h1, h2, h3, h4 { line-height: 1.12; font-weight: 800; letter-spacing: -.02em; }
   .heritage__list li { justify-content: center; }
 }
 
+/* ---------- Video Library ---------- */
+.videolib { background: linear-gradient(180deg, var(--paper-2), var(--paper)); }
+.videolib .section__head { text-align: center; }
+.videolib__bar { display: inline-block; width: 96px; height: 6px; border-radius: 6px; background: var(--red); margin-top: .8rem; }
+.videolib__player { max-width: 900px; margin: 0 auto clamp(2rem, 4vw, 3rem); }
+.videolib__screen { position: relative; aspect-ratio: 16 / 9; border-radius: clamp(1rem, 3vw, 2rem); overflow: hidden; border: 8px solid var(--ink); background: #121212; box-shadow: var(--shadow-lg); }
+.videolib__screen img { width: 100%; height: 100%; object-fit: cover; }
+.videolib__play { position: absolute; inset: 0; margin: auto; width: clamp(64px, 10vw, 96px); height: clamp(64px, 10vw, 96px); border: none; border-radius: 50%; background: var(--red); color: #fff; display: grid; place-items: center; cursor: pointer; box-shadow: 0 12px 34px rgba(0,0,0,.45); transition: transform .3s var(--ease); }
+.videolib__play svg { width: 46%; height: 46%; margin-left: 4px; }
+.videolib__play:hover { transform: scale(1.1); }
+.videolib__play:active { transform: scale(.95); }
+.videolib__thumbs { display: flex; gap: 1rem; overflow-x: auto; padding: .4rem clamp(1rem, 4vw, 2rem) 1rem; scrollbar-width: none; scroll-snap-type: x proximity; }
+.videolib__thumbs::-webkit-scrollbar { display: none; }
+@media (min-width: 940px) { .videolib__thumbs { justify-content: center; } }
+.vthumb { flex: 0 0 auto; width: clamp(120px, 20vw, 190px); aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; position: relative; cursor: pointer; border: 3px solid transparent; padding: 0; background: none; scroll-snap-align: center; transition: transform .3s var(--ease), border-color .3s; }
+.vthumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vthumb::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.4); transition: background .3s; }
+.vthumb__play { position: absolute; inset: 0; z-index: 2; display: grid; place-items: center; color: #fff; }
+.vthumb__play svg { width: 30px; height: 30px; opacity: .85; }
+.vthumb:hover { transform: scale(1.05); }
+.vthumb:hover::after { background: rgba(0,0,0,.25); }
+.vthumb.is-active { border-color: var(--red); transform: scale(1.05); }
+.vthumb.is-active::after { background: rgba(0,0,0,.1); }
+
 /* ---------- Recent Struggles ---------- */
 .struggles { background: var(--paper); }
 .struggles .section__head { max-width: 720px; }
