@@ -422,10 +422,11 @@ h1, h2, h3, h4 { line-height: 1.12; font-weight: 800; letter-spacing: -.02em; }
   mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
   overflow: hidden; padding: 2.4rem 0;
 }
-.memories__track { display: flex; align-items: center; width: max-content; animation: mem-step 18s infinite; animation-timing-function: ease-in-out; }
+.memories__track { display: flex; width: 300%; animation: mem-slide 9s infinite; animation-timing-function: ease-in-out; }
 .memories__mask:hover .memories__track { animation-play-state: paused; }
+.mem-page { flex: 0 0 33.3333%; width: 33.3333%; display: flex; justify-content: center; align-items: center; gap: clamp(1rem, 2.4vw, 2.4rem); }
 .polaroid {
-  flex: 0 0 auto; margin: 0 1.4rem; position: relative;
+  flex: 0 0 auto; position: relative;
   background: #fff; padding: 14px 14px 42px; border-radius: 4px;
   box-shadow: 0 16px 40px -16px rgba(40,20,10,.35);
   transform: rotate(var(--rot, 0deg));
@@ -435,17 +436,14 @@ h1, h2, h3, h4 { line-height: 1.12; font-weight: 800; letter-spacing: -.02em; }
 .polaroid img { width: 300px; height: 220px; object-fit: cover; display: block; background: var(--surface-container, #e5e2e1); }
 .polaroid figcaption { position: absolute; left: 0; right: 0; bottom: 12px; text-align: center; font-weight: 700; color: var(--ink-2); font-size: .98rem; }
 .polaroid__tape { position: absolute; top: -11px; left: 50%; transform: translateX(-50%) rotate(-3deg); width: 74px; height: 26px; background: rgba(252,212,0,.62); box-shadow: 0 1px 3px rgba(0,0,0,.15); }
-/* Hold ~2.25s on each card, then slide to the next (6 steps -> -50% = one full set) */
-@keyframes mem-step {
-  0%,    12.5%  { transform: translateX(0); }
-  16.667%, 29.167% { transform: translateX(-8.333%); }
-  33.333%, 45.833% { transform: translateX(-16.667%); }
-  50%,   62.5%  { transform: translateX(-25%); }
-  66.667%, 79.167% { transform: translateX(-33.333%); }
-  83.333%, 95.833% { transform: translateX(-41.667%); }
-  100%          { transform: translateX(-50%); }
+/* Show a page of 3, hold ~3.4s, then slide to the next page of 3 (loops seamlessly) */
+@keyframes mem-slide {
+  0%,   37.5%  { transform: translateX(0); }
+  50%,  87.5%  { transform: translateX(-33.3333%); }
+  100%         { transform: translateX(-66.6667%); }
 }
-@media (max-width: 560px) { .polaroid img { width: 220px; height: 165px; } }
+@media (max-width: 1024px) { .polaroid img { width: 240px; height: 176px; } }
+@media (max-width: 760px)  { .polaroid img { width: 168px; height: 124px; } .polaroid { padding: 9px 9px 28px; } .polaroid figcaption { font-size: .78rem; bottom: 8px; } }
 @media (prefers-reduced-motion: reduce) { .memories__track { animation: none; overflow-x: auto; } }
 
 /* ---------- Aims / Objectives ---------- */
