@@ -45,12 +45,21 @@
   </nav>
 
   <main id="top">
-    <!-- Hero -->
-    <section class="hero" id="hero">
-      <div class="hero__layer" id="heroLayer" aria-hidden="true"><img src="assets/media/banner/bannat-5.png" alt="" /></div>
+    <!-- Hero: auto slideshow -->
+    <section class="hero" id="hero" aria-roledescription="carousel" aria-label="Featured">
+      <div class="hero__slides" id="heroSlides" aria-hidden="true">
+        <div class="hslide is-active"><img src="assets/media/banner/bannat-5.png" alt="" style="object-position:72% center" /></div>
+        <div class="hslide"><img src="assets/media/banner/banner-2.jpg" alt="" /></div>
+        <div class="hslide"><img src="assets/media/banner/banner-4.jpg" alt="" /></div>
+        <div class="hslide"><img src="assets/media/banner/banner-3.jpg" alt="" /></div>
+      </div>
       <div class="hero__grad" aria-hidden="true"></div>
       <div class="hero__vig" aria-hidden="true"></div>
-      <div class="wrap hero__in" id="heroContent">
+
+      <button class="hero__arrow hero__arrow--prev" id="heroPrev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="hero__arrow hero__arrow--next" id="heroNext" type="button" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+
+      <div class="wrap hero__in">
         <span class="kicker" data-reveal><i></i> ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ · Since 1999</span>
         <h1 class="hero__title">
           <span class="en" data-reveal data-delay="80">The <em>Voice</em> of Kannada</span>
@@ -61,12 +70,9 @@
           <a class="btn btn--fill" href="#join" lang="kn">ನಮ್ಮೊಂದಿಗೆ ಕೈಜೋಡಿಸಿ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn btn--ghost" href="#leaders" lang="kn">ಅಧ್ಯಕ್ಷರ ನುಡಿ</a>
         </div>
-        <div class="hero__meta" data-reveal data-delay="540">
-          <div><b>31+</b><span lang="kn">ಜಿಲ್ಲೆಗಳು</span></div>
-          <div><b>65 ಲಕ್ಷ+</b><span lang="kn">ಕಾರ್ಯಕರ್ತರು</span></div>
-          <div><b>25</b><span lang="kn">ವರ್ಷಗಳ ಹೋರಾಟ</span></div>
-        </div>
       </div>
+
+      <div class="hero__dots" id="heroDots" role="tablist" aria-label="Choose slide"></div>
       <div class="cue" aria-hidden="true">Scroll<i></i></div>
     </section>
 

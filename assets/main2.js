@@ -41,22 +41,36 @@
     reveals.forEach(function (el) { rio.observe(el); });
   } else { reveals.forEach(function (el) { el.classList.add("in"); }); }
 
-  /* ---- Hero 3D parallax (mouse) + scroll drift ---- */
-  var hero = doc.getElementById("hero"), hl = doc.getElementById("heroLayer"), hc = doc.getElementById("heroContent");
-  var mx = 0, my = 0, cx = 0, cy = 0;
-  if (hero && !reduce) {
-    hero.addEventListener("pointermove", function (e) {
-      var r = hero.getBoundingClientRect();
-      mx = (e.clientX - r.left) / r.width - .5;
-      my = (e.clientY - r.top) / r.height - .5;
+  /* ---- Hero auto slideshow ---- */
+  var hero = doc.getElementById("hero"), slidesWrap = doc.getElementById("heroSlides");
+  if (slidesWrap) {
+    var slides = [].slice.call(slidesWrap.querySelectorAll(".hslide"));
+    var dotsW = doc.getElementById("heroDots");
+    var sn = slides.length, si = 0, stimer = null, SINT = 5500;
+    var sdots = slides.map(function (_, i) {
+      var b = doc.createElement("button"); b.type = "button"; b.setAttribute("role", "tab"); b.setAttribute("aria-label", "Slide " + (i + 1));
+      b.addEventListener("click", function () { sgo(i); srearm(); });
+      if (dotsW) dotsW.appendChild(b); return b;
     });
-    hero.addEventListener("pointerleave", function () { mx = 0; my = 0; });
-    (function loop() {
-      cx += (mx - cx) * .05; cy += (my - cy) * .05;
-      if (hl) hl.style.transform = "translate3d(" + (cx * -34) + "px," + (cy * -22) + "px,0) scale(1.12) rotateX(" + (cy * 3) + "deg) rotateY(" + (cx * -4) + "deg)";
-      if (hc) hc.style.transform = "translate3d(" + (cx * 16) + "px," + (cy * 10) + "px,0)";
-      raf(loop);
-    })();
+    function sgo(i) {
+      si = (i + sn) % sn;
+      slides.forEach(function (s, k) { s.classList.toggle("is-active", k === si); });
+      sdots.forEach(function (d, k) { d.classList.toggle("on", k === si); });
+    }
+    function snext() { sgo(si + 1); } function sprev() { sgo(si - 1); }
+    var hp = doc.getElementById("heroPrev"), hnx = doc.getElementById("heroNext");
+    if (hp) hp.addEventListener("click", function () { sprev(); srearm(); });
+    if (hnx) hnx.addEventListener("click", function () { snext(); srearm(); });
+    function sstart() { if (reduce) return; stimer = setInterval(snext, SINT); }
+    function srearm() { if (stimer) clearInterval(stimer); sstart(); }
+    if (hero) {
+      hero.addEventListener("pointerenter", function () { if (stimer) clearInterval(stimer); });
+      hero.addEventListener("pointerleave", sstart);
+      var hsx = null;
+      hero.addEventListener("pointerdown", function (e) { hsx = e.clientX; });
+      window.addEventListener("pointerup", function (e) { if (hsx === null) return; var dx = e.clientX - hsx; if (Math.abs(dx) > 50) { dx < 0 ? snext() : sprev(); srearm(); } hsx = null; });
+    }
+    sgo(0); sstart();
   }
 
   /* ---- Scroll parallax for [data-para] ---- */
