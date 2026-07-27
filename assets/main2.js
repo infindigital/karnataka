@@ -10,11 +10,12 @@
   var yr = doc.getElementById("yr"); if (yr) yr.textContent = new Date().getFullYear();
 
   /* ---- Nav state + progress ---- */
-  var nav = doc.getElementById("nav"), bar = doc.getElementById("bar");
+  var nav = doc.getElementById("nav"), bar = doc.getElementById("bar"), heroImg = doc.getElementById("heroImg");
   function onScroll() {
     var sy = window.scrollY;
     if (nav) nav.classList.toggle("is-solid", sy > 40);
     if (bar) { var h = doc.documentElement.scrollHeight - window.innerHeight; bar.style.setProperty("--p", h > 0 ? sy / h : 0); }
+    if (heroImg && !reduce && sy < window.innerHeight) heroImg.style.transform = "translateY(" + (sy * 0.2) + "px)";
   }
   window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
 
