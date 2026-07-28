@@ -1,604 +1,316 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="kn">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#C4161C" />
-  <title>Karnataka Rakshana Vedike — Voice of Kannada &amp; Karnataka</title>
-  <meta name="description" content="Karnataka Rakshana Vedike (KaRaVe) — a people's movement safeguarding the Kannada language, culture, land and livelihood since 1999. 6 million+ members. 12,000+ branches. One Kannada spirit." />
-  <meta property="og:title" content="Karnataka Rakshana Vedike — Voice of Kannada &amp; Karnataka" />
-  <meta property="og:description" content="A people's movement for Kannada language, culture, land and livelihood since 1999." />
-  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#120E0A" />
+  <title>ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ — Voice of Kannada</title>
+  <meta name="description" content="ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ — ಕನ್ನಡ ನಾಡು, ನುಡಿ, ನೆಲ ಮತ್ತು ಜಲದ ರಕ್ಷಣೆಗಾಗಿ 1999 ರಿಂದ ಜನಪರ ಹೋರಾಟ." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='16' fill='%23F5B301'/%3E%3Crect y='16' width='32' height='16' fill='%23C4161C'/%3E%3C/svg%3E" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Anek+Kannada:wght@500;600;700;800&family=Archivo:wght@400;500;600&family=Noto+Sans+Kannada:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles2.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='16' fill='%23E7B53C'/%3E%3Crect y='16' width='32' height='16' fill='%23D01E24'/%3E%3C/svg%3E" />
 </head>
 <body>
-  <!-- Header / Nav -->
-  <header class="header" id="top">
-    <div class="container header__inner">
-      <a class="brand" href="#top" aria-label="Karnataka Rakshana Vedike home">
-        <span class="brand__mark" aria-hidden="true">
-          <span class="brand__flag"></span>
-        </span>
-        <span class="brand__text">
-          <strong>Karnataka Rakshana Vedike</strong>
-          <small lang="kn">ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ</small>
-        </span>
+  <div class="bar" id="bar" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__in">
+      <a class="brand" href="#top" aria-label="ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ">
+        <span class="brand__f" aria-hidden="true"></span>
+        <span class="brand__t"><strong>Karnataka Rakshana Vedike</strong><small lang="kn">ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ</small></span>
       </a>
-
-      <nav class="nav" id="nav" aria-label="Primary">
-        <a href="#top" class="is-active" data-kn="ಮುಖಪುಟ" data-en="Home">ಮುಖಪುಟ</a>
-        <a href="#aims" data-kn="ನಮ್ಮ ಸಂಘಟನೆಯ ಬಗ್ಗೆ" data-en="About Us">ನಮ್ಮ ಸಂಘಟನೆಯ ಬಗ್ಗೆ</a>
-        <a href="#leaders" data-kn="ನಮ್ಮ ನಾಯಕರು" data-en="Our Leaders">ನಮ್ಮ ನಾಯಕರು</a>
-        <a href="#videolib" data-kn="ಮಾಧ್ಯಮ ವರದಿ" data-en="Media">ಮಾಧ್ಯಮ ವರದಿ</a>
-        <a href="#events" data-kn="ಸಾಮಾಜಿಕ ಕಾರ್ಯಕ್ರಮಗಳು" data-en="Social Work">ಸಾಮಾಜಿಕ ಕಾರ್ಯಕ್ರಮಗಳು</a>
-        <a href="#struggles" data-kn="ಹೋರಾಟಗಳು" data-en="Movements">ಹೋರಾಟಗಳು</a>
-        <a href="#chitrashale" data-kn="ಗ್ಯಾಲರಿ" data-en="Gallery">ಗ್ಯಾಲರಿ</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about" lang="kn">ನಮ್ಮ ಬಗ್ಗೆ</a>
+        <a href="#leaders" lang="kn">ಅಧ್ಯಕ್ಷರು</a>
+        <a href="#work" lang="kn">ಕಾರ್ಯ</a>
+        <a href="#events" lang="kn">ಕಾರ್ಯಕ್ರಮ</a>
+        <a href="#gallery" lang="kn">ಚಿತ್ರಶಾಲೆ</a>
       </nav>
-
-      <div class="header__tools">
-        <div class="langtoggle" role="group" aria-label="Language">
-          <button type="button" class="langtoggle__btn is-on" data-lang="kn">KA</button>
-          <button type="button" class="langtoggle__btn" data-lang="en">EN</button>
-        </div>
-        <a href="#chitrashale" class="iconbtn" aria-label="Gallery photos">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/></svg>
-        </a>
-        <a href="#contact" class="btn btn--join" data-kn="ಸೇರಿ" data-en="Join">ಸೇರಿ</a>
+      <div class="nav__r">
+        <a class="pill" href="#join" lang="kn">ಸೇರಿ</a>
+        <button class="burger" id="burger" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
+  <nav class="sheet" id="sheet" aria-label="Mobile">
+    <a href="#about" lang="kn">ನಮ್ಮ ಬಗ್ಗೆ</a>
+    <a href="#leaders" lang="kn">ಅಧ್ಯಕ್ಷರ ನುಡಿ</a>
+    <a href="#work" lang="kn">ಜನಸ್ನೇಹಿ ಕಾರ್ಯ</a>
+    <a href="#events" lang="kn">ಕಾರ್ಯಕ್ರಮಗಳು</a>
+    <a href="#gallery" lang="kn">ಚಿತ್ರಶಾಲೆ</a>
+    <a href="#join" lang="kn">ಸೇರಿ</a>
+  </nav>
 
-  <main>
-    <!-- Hero banner slider -->
-    <section class="hero-slider" id="heroSlider" aria-label="Featured banners" aria-roledescription="carousel">
-      <div class="hero-slider__track">
-        <figure class="hslide is-active" data-label="ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ">
-          <img src="assets/media/banner/banner-2.jpg" data-remote="https://d2ol7oe51mr4n9.cloudfront.net/user_3G4bnJPvIHipa5YfpqpDWYcQAig/8633b214-7e27-4048-98a4-b83fd46f78cf.jpg" alt="Karnataka Rakshana Vedike banner" loading="eager" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.dataset.remote}else{this.closest('.hslide').classList.add('is-fallback')}" />
-        </figure>
-        <figure class="hslide" data-label="ನಾಡು ನುಡಿ ನೆಲ ಜಲ">
-          <img src="assets/media/banner/banner-3.jpg" data-remote="https://d2ol7oe51mr4n9.cloudfront.net/user_3G4bnJPvIHipa5YfpqpDWYcQAig/79db3e2f-8eed-4d24-8888-24e9366137b5.jpg" alt="Karnataka Rakshana Vedike banner" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.dataset.remote}else{this.closest('.hslide').classList.add('is-fallback')}" />
-        </figure>
-        <figure class="hslide" data-label="ಜೈ ಕರ್ನಾಟಕ ಮಾತೆ">
-          <img src="assets/media/banner/banner-4.jpg" data-remote="https://d2ol7oe51mr4n9.cloudfront.net/user_3G4bnJPvIHipa5YfpqpDWYcQAig/991de2d6-4c85-4913-9ad2-452d06b0b717.jpg" alt="Karnataka Rakshana Vedike banner" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.dataset.remote}else{this.closest('.hslide').classList.add('is-fallback')}" />
-        </figure>
+  <main id="top">
+    <!-- Hero: full-screen cinematic -->
+    <section class="hero hero--cine" id="hero">
+      <div class="hero__img" id="heroImg" aria-hidden="true">
+        <video class="hero__vid" id="heroVid" autoplay muted loop playsinline preload="auto" poster="assets/media/video/hero-poster.jpg">
+          <source src="assets/media/video/hero.webm" type="video/webm" />
+          <source src="assets/media/video/hero.mp4" type="video/mp4" />
+          <img src="assets/media/banner/bannat-5.png" alt="" />
+        </video>
       </div>
+      <div class="hero__grad" aria-hidden="true"></div>
+      <span class="hero__edge hero__edge--l" aria-hidden="true"></span>
+      <span class="hero__edge hero__edge--r" aria-hidden="true"></span>
 
-      <button class="hero-slider__arrow hero-slider__arrow--prev" id="heroPrev" aria-label="Previous banner">&#8249;</button>
-      <button class="hero-slider__arrow hero-slider__arrow--next" id="heroNext" aria-label="Next banner">&#8250;</button>
+      <div class="wrap hero__in">
+        <span class="hbadge" data-reveal>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.6l2.7 5.5 6 .9-4.35 4.24 1.03 6L12 19.3 6.62 22.24l1.03-6L3.3 8l6-.9L12 1.6z"/></svg>
+          <span lang="kn">ಕನ್ನಡಿಗರ ಹೆಮ್ಮೆಯ ಧ್ವನಿ</span>
+        </span>
 
-      <div class="hero-slider__dots" id="heroDots" role="tablist" aria-label="Choose banner">
-        <button class="is-on" aria-label="Banner 1"></button>
-        <button aria-label="Banner 2"></button>
-        <button aria-label="Banner 3"></button>
+        <h1 class="hhead" data-reveal data-delay="90" lang="kn">
+          ನಮ್ಮ ನಡೆ <span class="g">ಕನ್ನಡದೆಡೆ</span>,<br />
+          ಕನ್ನಡವೇ ನಮ್ಮ <span class="r">ಉಸಿರು</span>
+        </h1>
+
+        <p class="hsub" data-reveal data-delay="220" lang="kn">ಕರ್ನಾಟಕದ ಭವ್ಯ ಸಂಸ್ಕೃತಿ, ನೆಲ, ಜಲ ಮತ್ತು ಭಾಷೆಯ ಉಳಿವಿಗಾಗಿ ನಿರಂತರ ಹೋರಾಟ. ನಮ್ಮ ಅಸ್ಮಿತೆಯನ್ನು ಉಳಿಸಿ ಬೆಳೆಸಲು ನಮ್ಮೊಂದಿಗೆ ಕೈಜೋಡಿಸಿ.</p>
+
+        <div class="hcta" data-reveal data-delay="340">
+          <a class="btn btn--gold" href="#join" lang="kn">ಸದಸ್ಯರಾಗಿ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--glass" href="#about" lang="kn">ಹೆಚ್ಚು ತಿಳಿಯಿರಿ</a>
+        </div>
+
+        <div class="hstats" data-reveal data-delay="460">
+          <div class="hstat hstat--r">
+            <span class="hstat__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span>
+            <div><b lang="kn">೧೦ ಲಕ್ಷ+</b><small lang="kn">ಸಕ್ರಿಯ ಸದಸ್ಯರು</small></div>
+          </div>
+          <div class="hstat hstat--g">
+            <span class="hstat__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/></svg></span>
+            <div><b lang="kn">೨೫+</b><small lang="kn">ವರ್ಷಗಳ ಹೋರಾಟ</small></div>
+          </div>
+          <div class="hstat hstat--w">
+            <span class="hstat__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg></span>
+            <div><b lang="kn">೩೧</b><small lang="kn">ಜಿಲ್ಲಾ ಕೇಂದ್ರಗಳು</small></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Marquee -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>ಬಾಗಲಕೋಟೆ</span><span>•</span><span>ಬಳ್ಳಾರಿ</span><span>•</span><span>ಬೆಳಗಾವಿ</span><span>•</span><span>ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ</span><span>•</span>
-        <span>ಬೆಂಗಳೂರು ನಗರ</span><span>•</span><span>ಬೀದರ್</span><span>•</span><span>ಚಾಮರಾಜನಗರ</span><span>•</span><span>ಚಿಕ್ಕಬಳ್ಳಾಪುರ</span><span>•</span>
-        <span>ಚಿಕ್ಕಮಗಳೂರು</span><span>•</span><span>ಚಿತ್ರದುರ್ಗ</span><span>•</span><span>ದಕ್ಷಿಣ ಕನ್ನಡ</span><span>•</span><span>ದಾವಣಗೆರೆ</span><span>•</span>
-        <span>ಧಾರವಾಡ</span><span>•</span><span>ಗದಗ</span><span>•</span><span>ಹಾಸನ</span><span>•</span><span>ಹಾವೇರಿ</span><span>•</span>
-        <span>ಕಲಬುರಗಿ</span><span>•</span><span>ಕೊಡಗು</span><span>•</span><span>ಕೋಲಾರ</span><span>•</span><span>ಕೊಪ್ಪಳ</span><span>•</span>
-        <span>ಮಂಡ್ಯ</span><span>•</span><span>ಮೈಸೂರು</span><span>•</span><span>ರಾಯಚೂರು</span><span>•</span><span>ರಾಮನಗರ</span><span>•</span>
-        <span>ಶಿವಮೊಗ್ಗ</span><span>•</span><span>ತುಮಕೂರು</span><span>•</span><span>ಉಡುಪಿ</span><span>•</span><span>ಉತ್ತರ ಕನ್ನಡ</span><span>•</span>
-        <span>ವಿಜಯಪುರ</span><span>•</span><span>ವಿಜಯನಗರ</span><span>•</span><span>ಯಾದಗಿರಿ</span><span>•</span>
-        <span>ಬಾಗಲಕೋಟೆ</span><span>•</span><span>ಬಳ್ಳಾರಿ</span><span>•</span><span>ಬೆಳಗಾವಿ</span><span>•</span><span>ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ</span><span>•</span>
-        <span>ಬೆಂಗಳೂರು ನಗರ</span><span>•</span><span>ಬೀದರ್</span><span>•</span><span>ಚಾಮರಾಜನಗರ</span><span>•</span><span>ಚಿಕ್ಕಬಳ್ಳಾಪುರ</span><span>•</span>
-        <span>ಚಿಕ್ಕಮಗಳೂರು</span><span>•</span><span>ಚಿತ್ರದುರ್ಗ</span><span>•</span><span>ದಕ್ಷಿಣ ಕನ್ನಡ</span><span>•</span><span>ದಾವಣಗೆರೆ</span><span>•</span>
-        <span>ಧಾರವಾಡ</span><span>•</span><span>ಗದಗ</span><span>•</span><span>ಹಾಸನ</span><span>•</span><span>ಹಾವೇರಿ</span><span>•</span>
-        <span>ಕಲಬುರಗಿ</span><span>•</span><span>ಕೊಡಗು</span><span>•</span><span>ಕೋಲಾರ</span><span>•</span><span>ಕೊಪ್ಪಳ</span><span>•</span>
-        <span>ಮಂಡ್ಯ</span><span>•</span><span>ಮೈಸೂರು</span><span>•</span><span>ರಾಯಚೂರು</span><span>•</span><span>ರಾಮನಗರ</span><span>•</span>
-        <span>ಶಿವಮೊಗ್ಗ</span><span>•</span><span>ತುಮಕೂರು</span><span>•</span><span>ಉಡುಪಿ</span><span>•</span><span>ಉತ್ತರ ಕನ್ನಡ</span><span>•</span>
-        <span>ವಿಜಯಪುರ</span><span>•</span><span>ವಿಜಯನಗರ</span><span>•</span><span>ಯಾದಗಿರಿ</span><span>•</span>
+    <!-- Ticker -->
+    <div class="marq" aria-hidden="true">
+      <div class="marq__t">
+        <span>ಬಾಗಲಕೋಟೆ<b class="s">◆</b>ಬಳ್ಳಾರಿ<b class="s">◆</b>ಬೆಳಗಾವಿ<b class="s">◆</b>ಬೆಂಗಳೂರು<b class="s">◆</b>ಬೀದರ್<b class="s">◆</b>ಚಾಮರಾಜನಗರ<b class="s">◆</b>ಚಿಕ್ಕಬಳ್ಳಾಪುರ<b class="s">◆</b>ಚಿಕ್ಕಮಗಳೂರು<b class="s">◆</b>ಚಿತ್ರದುರ್ಗ<b class="s">◆</b>ದಕ್ಷಿಣ ಕನ್ನಡ<b class="s">◆</b>ದಾವಣಗೆರೆ<b class="s">◆</b>ಧಾರವಾಡ<b class="s">◆</b>ಗದಗ<b class="s">◆</b>ಹಾಸನ<b class="s">◆</b>ಹಾವೇರಿ<b class="s">◆</b>ಕಲಬುರಗಿ<b class="s">◆</b>ಕೊಡಗು<b class="s">◆</b>ಕೋಲಾರ<b class="s">◆</b>ಕೊಪ್ಪಳ<b class="s">◆</b>ಮಂಡ್ಯ<b class="s">◆</b>ಮೈಸೂರು<b class="s">◆</b>ರಾಯಚೂರು<b class="s">◆</b>ರಾಮನಗರ<b class="s">◆</b>ಶಿವಮೊಗ್ಗ<b class="s">◆</b>ತುಮಕೂರು<b class="s">◆</b>ಉಡುಪಿ<b class="s">◆</b>ಉತ್ತರ ಕನ್ನಡ<b class="s">◆</b>ವಿಜಯಪುರ<b class="s">◆</b>ವಿಜಯನಗರ<b class="s">◆</b>ಯಾದಗಿರಿ<b class="s">◆</b></span>
+        <span>ಬಾಗಲಕೋಟೆ<b class="s">◆</b>ಬಳ್ಳಾರಿ<b class="s">◆</b>ಬೆಳಗಾವಿ<b class="s">◆</b>ಬೆಂಗಳೂರು<b class="s">◆</b>ಬೀದರ್<b class="s">◆</b>ಚಾಮರಾಜನಗರ<b class="s">◆</b>ಚಿಕ್ಕಬಳ್ಳಾಪುರ<b class="s">◆</b>ಚಿಕ್ಕಮಗಳೂರು<b class="s">◆</b>ಚಿತ್ರದುರ್ಗ<b class="s">◆</b>ದಕ್ಷಿಣ ಕನ್ನಡ<b class="s">◆</b>ದಾವಣಗೆರೆ<b class="s">◆</b>ಧಾರವಾಡ<b class="s">◆</b>ಗದಗ<b class="s">◆</b>ಹಾಸನ<b class="s">◆</b>ಹಾವೇರಿ<b class="s">◆</b>ಕಲಬುರಗಿ<b class="s">◆</b>ಕೊಡಗು<b class="s">◆</b>ಕೋಲಾರ<b class="s">◆</b>ಕೊಪ್ಪಳ<b class="s">◆</b>ಮಂಡ್ಯ<b class="s">◆</b>ಮೈಸೂರು<b class="s">◆</b>ರಾಯಚೂರು<b class="s">◆</b>ರಾಮನಗರ<b class="s">◆</b>ಶಿವಮೊಗ್ಗ<b class="s">◆</b>ತುಮಕೂರು<b class="s">◆</b>ಉಡುಪಿ<b class="s">◆</b>ಉತ್ತರ ಕನ್ನಡ<b class="s">◆</b>ವಿಜಯಪುರ<b class="s">◆</b>ವಿಜಯನಗರ<b class="s">◆</b>ಯಾದಗಿರಿ<b class="s">◆</b></span>
       </div>
     </div>
 
-    <!-- President's Message + Impact (Our Leaders) -->
-    <section class="president" id="leaders">
-      <div class="president__hero">
-        <img class="president__bg" src="assets/media/banner/bannat-5.png" alt="" aria-hidden="true"
-             onerror="this.closest('.president__hero').classList.add('is-nobg')" />
-        <div class="container">
-          <div class="president__card reveal">
-            <span class="president__badge" lang="kn">ರಾಜ್ಯ ಅಧ್ಯಕ್ಷರ ನುಡಿ</span>
-            <h2 class="president__title" lang="kn">ನಮ್ಮ ನಡೆ ಕನ್ನಡದೆಡೆ</h2>
-            <span class="president__rule" aria-hidden="true"></span>
-            <blockquote class="president__quote" lang="kn">
-              ಕನ್ನಡವೇ ನಮ್ಮ ಉಸಿರು, ಕನ್ನಡವೇ ನಮ್ಮ ಶಕ್ತಿ. ನಾಡು-ನುಡಿಯ ರಕ್ಷಣೆ ನಮ್ಮ ಪ್ರಥಮ ಕರ್ತವ್ಯ.
-            </blockquote>
-            <div class="president__body" lang="kn">
-              <p>ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆಯು ಕನ್ನಡ ನಾಡು, ನುಡಿ ಮತ್ತು ನೆಲದ ರಕ್ಷಣೆಗಾಗಿ ಸದಾ ಕಾಲ ಶ್ರಮಿಸುತ್ತಿದೆ.</p>
-              <p>ಕನ್ನಡಿಗರ ಸಬಲೀಕರಣ ಮತ್ತು ಅವರ ಹಕ್ಕುಗಳ ರಕ್ಷಣೆ ನಮ್ಮ ಸಂಘಟನೆಯ ಮುಖ್ಯ ಉದ್ದೇಶಗಳಲ್ಲೊಂದು.</p>
+    <!-- About -->
+    <section class="sec about" id="about">
+      <div class="wrap">
+        <div class="about__grid about__grid--v2">
+          <div data-reveal="right">
+            <span class="eyebrow" lang="kn">ಸ್ಥಾಪನೆ ೧೯೯೯</span>
+            <h2 class="h2" lang="kn">ನಮ್ಮ <span class="hl">ಬಗ್ಗೆ</span></h2>
+            <blockquote class="about__quote" lang="kn">ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆಯು ಕೇವಲ ಒಂದು ಸಂಘಟನೆಯಲ್ಲ; ಇದು ಆರು ಕೋಟಿ ಕನ್ನಡಿಗರ ಧ್ವನಿ, ಕನ್ನಡದ ಅಸ್ಮಿತೆಯ ರಕ್ಷಕ.</blockquote>
+            <p lang="kn">ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆಯು ಕರ್ನಾಟಕದ ಭೂಮಿ, ಭಾಷೆ ಮತ್ತು ಜಲದ ಹಿತಾಸಕ್ತಿಗಳನ್ನು ರಕ್ಷಿಸಲು ಬದ್ಧವಾಗಿರುವ ವಿಶ್ವದ ಅತಿದೊಡ್ಡ ಭಾಷಾ ಸಂಘಟನೆಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ. ಕನ್ನಡದ ಪರಂಪರೆಯನ್ನು ಕಾಪಾಡುವ ಮತ್ತು ಕನ್ನಡಿಗರ ಹಕ್ಕುಗಳಿಗಾಗಿ ಹೋರಾಡುವ ಏಕೈಕ ಉದ್ದೇಶದೊಂದಿಗೆ ನಾವು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದ್ದೇವೆ.</p>
+            <p lang="kn">ನಮ್ಮ ಕಾರ್ಯಕರ್ತರು ರಾಜ್ಯದ ಮೂಲೆ ಮೂಲೆಗಳಲ್ಲಿ ಹರಡಿಕೊಂಡಿದ್ದು, ಸಾಮಾಜಿಕ ನ್ಯಾಯ, ಸಾಂಸ್ಕೃತಿಕ ಪುನರುತ್ಥಾನ ಮತ್ತು ಆರ್ಥಿಕ ಸಮಾನತೆಗಾಗಿ ಶ್ರಮಿಸುತ್ತಿದ್ದಾರೆ. ಕನ್ನಡವನ್ನು ಕೇವಲ ಭಾಷೆಯಾಗಿ ಅಲ್ಲ, ಬದಲಾಗಿ ಬದುಕಿನ ಮಾರ್ಗವಾಗಿ ಉಳಿಸಿಕೊಳ್ಳಲು ನಾವು ನಿರಂತರವಾಗಿ ಜಾಗೃತಿ ಮೂಡಿಸುತ್ತಿದ್ದೇವೆ.</p>
+            <div class="about__sign"><i></i><span lang="kn">ನಾಡ ಸೇವೆ · ಬೆಂಗಳೂರು ಕೇಂದ್ರ ಕಚೇರಿ</span></div>
+          </div>
+          <div class="about__media" data-reveal="left">
+            <div class="frame frame--tall" data-tilt="9" data-glare>
+              <img src="assets/media/banner/organization.jpg" alt="ವಿಧಾನಸೌಧದ ಮುಂದೆ ಕನ್ನಡ ಬಾವುಟ" data-para="0.08" />
+              <div class="frame__cap"><p lang="kn">ಕನ್ನಡವೇ ಸತ್ಯ, ಕನ್ನಡವೇ ನಿತ್ಯ</p></div>
             </div>
-            <p class="president__jai" lang="kn">ಜೈ ಕರ್ನಾಟಕ ಮಾತೆ!</p>
           </div>
         </div>
-      </div>
 
-      <!-- Stats Bento Grid -->
-      <div class="container">
-        <div class="bento">
-          <article class="bento__cell bento__cell--main reveal">
-            <div>
-              <span class="bento__icon" aria-hidden="true">👥</span>
-              <h3 lang="kn">ಬಲಿಷ್ಠ ಸಂಘಟನೆ</h3>
-            </div>
-            <div>
-              <p class="bento__num" lang="kn">೬೫ ಲಕ್ಷ+</p>
-              <p class="bento__label" lang="kn">ನೋಂದಾಯಿತ ಕಾರ್ಯಕರ್ತರು ರಾಜ್ಯಾದ್ಯಂತ ಹರಡಿದ್ದಾರೆ.</p>
-            </div>
-          </article>
-          <article class="bento__cell bento__cell--white reveal">
-            <p class="bento__num bento__num--red" lang="kn">೩೦+</p>
-            <p class="bento__label" lang="kn">ಜಿಲ್ಲಾ ಘಟಕಗಳು</p>
-          </article>
-          <article class="bento__cell bento__cell--yellow reveal">
-            <p class="bento__num" lang="kn">೧೦೦%</p>
-            <p class="bento__label" lang="kn">ಕನ್ನಡಿಗರ ರಕ್ಷಣೆ</p>
-          </article>
-          <article class="bento__cell bento__cell--wide reveal">
-            <div>
-              <h4 lang="kn">ನಮ್ಮ ಹೋರಾಟದ ಹಾದಿ</h4>
-              <p lang="kn">ಕಳೆದ ಎರಡು ದಶಕಗಳಿಂದ ಕನ್ನಡದ ಅಸ್ಮಿತೆಗಾಗಿ ನಿರಂತರವಾಗಿ ಶ್ರಮಿಸುತ್ತಾ ಬಂದಿದ್ದೇವೆ. ಪ್ರತಿ ಹಳ್ಳಿಯಲ್ಲೂ ಕನ್ನಡದ ಬಾವುಟ ಹಾರಿಸುವುದೇ ನಮ್ಮ ಗುರಿ.</p>
-            </div>
-            <a class="bento__btn" href="#heritage" lang="kn">ಇತಿಹಾಸ ಓದಿ</a>
-          </article>
+        <!-- Core values -->
+        <div class="values">
+          <div class="values__head" data-reveal>
+            <h2 class="h2" lang="kn">ನಮ್ಮ ಪ್ರಮುಖ <span class="hl">ಮೌಲ್ಯಗಳು</span></h2>
+            <span class="values__rule" aria-hidden="true"></span>
+          </div>
+          <div class="values__grid">
+            <article class="vcard" data-reveal>
+              <span class="vcard__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.9 6h-2.95a15.7 15.7 0 00-1.38-3.56A8.03 8.03 0 0118.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14a7.82 7.82 0 010-4h3.38a16.5 16.5 0 000 4H4.26zm.82 2h2.95c.36 1.27.82 2.47 1.38 3.56A7.99 7.99 0 015.08 16zm2.95-8H5.08a7.99 7.99 0 013.33-3.56A15.7 15.7 0 007.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66a14.7 14.7 0 010-4h4.68a14.7 14.7 0 010 4zm.26 5.56c.56-1.09 1.02-2.29 1.38-3.56h2.95a8.03 8.03 0 01-4.33 3.56zM16.36 14a16.5 16.5 0 000-4h3.38a7.82 7.82 0 010 4h-3.38z"/></svg></span>
+              <h3 lang="kn">ಭಾಷಾ ಸ್ವಾಭಿಮಾನ</h3>
+              <p lang="kn">ಕನ್ನಡ ಭಾಷೆಯನ್ನು ಆಡಳಿತ, ಶಿಕ್ಷಣ ಮತ್ತು ದೈನಂದಿನ ವ್ಯವಹಾರಗಳಲ್ಲಿ ಪ್ರಾಥಮಿಕ ಭಾಷೆಯಾಗಿ ಬಳಸಲು ಉತ್ತೇಜಿಸುವುದು ಮತ್ತು ಅದರ ಹಿರಿಮೆಯನ್ನು ಎತ್ತಿ ಹಿಡಿಯುವುದು.</p>
+            </article>
+            <article class="vcard" data-reveal data-delay="90">
+              <span class="vcard__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 6l-3.75 5 2.85 3.8-1.6 1.2A24.9 24.9 0 007 10l-6 8h22L14 6z"/></svg></span>
+              <h3 lang="kn">ನೆಲ-ಜಲ ರಕ್ಷಣೆ</h3>
+              <p lang="kn">ಕರ್ನಾಟಕದ ಗಡಿ ರಕ್ಷಣೆ ಮತ್ತು ಕಾವೇರಿ ಸೇರಿದಂತೆ ರಾಜ್ಯದ ನದಿ ಮೂಲಗಳ ನ್ಯಾಯಸಮ್ಮತ ಪಾಲಿಗಾಗಿ ರಾಜಿ ರಹಿತ ಹೋರಾಟವನ್ನು ಸಂಘಟಿಸುವುದು.</p>
+            </article>
+            <article class="vcard" data-reveal data-delay="180">
+              <span class="vcard__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L3 6.5V9h18V6.5L12 2zM5 10v8H4v3h16v-3h-1v-8h-2.5v8h-3v-8h-3v8h-3v-8H5z"/></svg></span>
+              <h3 lang="kn">ಸಾಂಸ್ಕೃತಿಕ ಪರಂಪರೆ</h3>
+              <p lang="kn">ಕರ್ನಾಟಕದ ಸಮೃದ್ಧ ಜಾನಪದ, ಕಲೆ ಮತ್ತು ಇತಿಹಾಸವನ್ನು ಮುಂದಿನ ಪೀಳಿಗೆಗೆ ತಲುಪಿಸಲು ಸಾಂಸ್ಕೃತಿಕ ಚಟುವಟಿಕೆಗಳನ್ನು ನಿರಂತರವಾಗಿ ನಡೆಸುವುದು.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Join CTA band -->
+        <div class="cta-band" data-reveal>
+          <div class="cta-band__t">
+            <h2 lang="kn">ನೀವು ನಮ್ಮೊಂದಿಗೆ ಸೇರಲು ಸಿದ್ಧರಿದ್ದೀರಾ?</h2>
+            <p lang="kn">ಕರ್ನಾಟಕದ ಅಸ್ಮಿತೆಯನ್ನು ಎತ್ತಿ ಹಿಡಿಯಲು ಮತ್ತು ಕನ್ನಡಿಗರ ಧ್ವನಿಯಾಗಲು ಇಂದು ವೇದಿಕೆಗೆ ಸೇರಿ.</p>
+          </div>
+          <a class="btn btn--fill" href="#join" lang="kn">ಸದಸ್ಯರಾಗಿ ಸೇರಿ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="cta-band__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 11l4-7v14l-4-3zM2 9v6h3l5 4V5L5 9H2zm12.5 3a2.5 2.5 0 00-1.5-2.29v4.58A2.5 2.5 0 0014.5 12z"/></svg></span>
         </div>
       </div>
     </section>
 
-    <!-- Heritage / Leader honor -->
-    <section class="section heritage" id="heritage">
-      <div class="container heritage__grid">
-        <div class="heritage__profile reveal">
-          <div class="heritage__ring">
-            <img src="assets/media/leaders/president.jpg" alt="ಹೆಚ್. ಶಿವರಾಮೇಗೌಡ — ರಾಜ್ಯ ಅಧ್ಯಕ್ಷರು" loading="lazy" />
-          </div>
-          <h2 class="heritage__name" lang="kn">ಹೆಚ್. ಶಿವರಾಮೇಗೌಡ</h2>
-          <p class="heritage__role" lang="kn">ರಾಜ್ಯ ಅಧ್ಯಕ್ಷರು</p>
-        </div>
-        <div class="heritage__content reveal">
-          <h2 class="heritage__title" lang="kn">ಕನ್ನಡವೇ ನಮ್ಮ<br/>ಉಸಿರು</h2>
-          <span class="heritage__underline" aria-hidden="true"></span>
-          <ul class="heritage__list">
-            <li class="is-gold" lang="kn">ಕನ್ನಡ ನಾಡು ನಮ್ಮ ಹೆಮ್ಮೆ</li>
-            <li class="is-red" lang="kn">ನುಡಿ ನಮ್ಮ ಅಸ್ಮಿತೆ</li>
-            <li class="is-red" lang="kn">ನೆಲ ನಮ್ಮ ಬದುಕು</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Statistics -->
-    <section class="stats" id="stats">
-      <div class="container">
-        <div class="stats__grid">
-          <div class="statcard reveal">
-            <span class="statcard__num" data-count="31" data-suffix="+">0</span>
-            <span class="statcard__label" lang="kn">ಜಿಲ್ಲೆಗಳು</span>
-          </div>
-          <div class="statcard statcard--yellow reveal">
-            <span class="statcard__num" data-count="226" data-suffix="+">0</span>
-            <span class="statcard__label" lang="kn">ತಾಲೂಕುಗಳು</span>
-          </div>
-          <div class="statcard statcard--red reveal">
-            <span class="statcard__num" data-count="10" data-suffix="K+">0</span>
-            <span class="statcard__label" lang="kn">ಸಕ್ರಿಯ ಕಾರ್ಯಕರ್ತರು</span>
-          </div>
-          <div class="statcard reveal">
-            <span class="statcard__num" data-count="500" data-suffix="+">0</span>
-            <span class="statcard__label" lang="kn">ಸಾಮಾಜಿಕ ಕಾರ್ಯಗಳು</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Fan Cam -->
-    <section class="fancam" id="fancam">
-      <div class="container">
-        <div class="fancam__card reveal">
-          <div class="fancam__left">
-            <div class="fancam__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </div>
-            <div>
-              <h2 class="fancam__title" lang="kn">ಫ್ಯಾನ್ ಕ್ಯಾಮ್</h2>
-              <p class="fancam__sub" lang="kn">ನಮ್ಮ ವಿಶೇಷ ಫ್ರೇಮ್‌ಗಳೊಂದಿಗೆ ಫೋಟೋ ತೆಗೆದುಕೊಳ್ಳಿ!</p>
-            </div>
-          </div>
-          <a class="fancam__cta" href="#chitrashale" lang="kn">
-            ಈಗಲೇ
-            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Jan-snehi works (infinite slider) -->
-    <section class="section works-slider" id="works">
-      <div class="container works-slider__head">
-        <h2 class="section__title" lang="kn">ಜನಸ್ನೇಹಿ ಕಾರ್ಯಗಳು</h2>
-        <span class="works-slider__rule" aria-hidden="true"></span>
-      </div>
-      <div class="works-slider__mask">
-        <div class="works-slider__track">
-          <figure class="workcard"><img src="assets/media/banner/1.jpg" alt="ಕನ್ನಡ ಭಾಷೆಯ ರಕ್ಷಣೆ ಮತ್ತು ಗೌರವ ವೃದ್ಧಿ" loading="lazy" /><span class="workcard__badge">1</span></figure>
-          <figure class="workcard"><img src="assets/media/banner/2.jpg" alt="ಕನ್ನಡಿಗರ ಉದ್ಯೋಗ ಹಕ್ಕಿಗೆ ದೃಢ ಬೆಂಬಲ" loading="lazy" /><span class="workcard__badge">2</span></figure>
-          <figure class="workcard"><img src="assets/media/banner/3.jpg" alt="ಸ್ಥಳೀಯ ಜನರ ಧ್ವನಿಗೆ ಶಕ್ತಿ" loading="lazy" /><span class="workcard__badge">3</span></figure>
-          <figure class="workcard"><img src="assets/media/banner/4.jpg" alt="ನಾಡಿನ ನೆಲ-ಜಲ ಸಂಪತ್ತಿನ ಸಂರಕ್ಷಣೆ" loading="lazy" /><span class="workcard__badge">4</span></figure>
-          <figure class="workcard"><img src="assets/media/banner/5.jpg" alt="ಸಾಮಾಜಿಕ ನ್ಯಾಯ ಮತ್ತು ಸಮಾನತೆ" loading="lazy" /><span class="workcard__badge">5</span></figure>
-          <figure class="workcard"><img src="assets/media/banner/6.jpg" alt="ರಾಜಕೀಯರಹಿತ ಜನಪರ ಹೋರಾಟ" loading="lazy" /><span class="workcard__badge">6</span></figure>
-          <figure class="workcard"><img src="assets/media/banner/7.jpg" alt="ಶಾಂತಿಪೂರ್ಣ ಹಾಗೂ ಕಾನೂನುಬದ್ಧ ಚಟುವಟಿಕೆಗಳು" loading="lazy" /><span class="workcard__badge">7</span></figure>
-          <figure class="workcard"><img src="assets/media/banner/8.jpg" alt="ಜನಜಾಗೃತಿ ಮತ್ತು ಏಕತೆ ನಿರ್ಮಾಣ" loading="lazy" /><span class="workcard__badge">8</span></figure>
-          <figure class="workcard"><img src="assets/media/banner/9.jpg" alt="ಸಂಕಷ್ಟದಲ್ಲಿರುವವರಿಗೆ ನೇರ ನೆರವು" loading="lazy" /><span class="workcard__badge">9</span></figure>
-          <figure class="workcard"><img src="assets/media/banner/10.jpg" alt="ಕನ್ನಡಿಗರ ಸ್ವಾಭಿಮಾನ ಬಲಪಡಿಸುವ ಕಾರ್ಯ" loading="lazy" /><span class="workcard__badge">10</span></figure>
-          <figure class="workcard" aria-hidden="true"><img src="assets/media/banner/1.jpg" alt="ಕನ್ನಡ ಭಾಷೆಯ ರಕ್ಷಣೆ ಮತ್ತು ಗೌರವ ವೃದ್ಧಿ" loading="lazy" /><span class="workcard__badge">1</span></figure>
-          <figure class="workcard" aria-hidden="true"><img src="assets/media/banner/2.jpg" alt="ಕನ್ನಡಿಗರ ಉದ್ಯೋಗ ಹಕ್ಕಿಗೆ ದೃಢ ಬೆಂಬಲ" loading="lazy" /><span class="workcard__badge">2</span></figure>
-          <figure class="workcard" aria-hidden="true"><img src="assets/media/banner/3.jpg" alt="ಸ್ಥಳೀಯ ಜನರ ಧ್ವನಿಗೆ ಶಕ್ತಿ" loading="lazy" /><span class="workcard__badge">3</span></figure>
-          <figure class="workcard" aria-hidden="true"><img src="assets/media/banner/4.jpg" alt="ನಾಡಿನ ನೆಲ-ಜಲ ಸಂಪತ್ತಿನ ಸಂರಕ್ಷಣೆ" loading="lazy" /><span class="workcard__badge">4</span></figure>
-          <figure class="workcard" aria-hidden="true"><img src="assets/media/banner/5.jpg" alt="ಸಾಮಾಜಿಕ ನ್ಯಾಯ ಮತ್ತು ಸಮಾನತೆ" loading="lazy" /><span class="workcard__badge">5</span></figure>
-          <figure class="workcard" aria-hidden="true"><img src="assets/media/banner/6.jpg" alt="ರಾಜಕೀಯರಹಿತ ಜನಪರ ಹೋರಾಟ" loading="lazy" /><span class="workcard__badge">6</span></figure>
-          <figure class="workcard" aria-hidden="true"><img src="assets/media/banner/7.jpg" alt="ಶಾಂತಿಪೂರ್ಣ ಹಾಗೂ ಕಾನೂನುಬದ್ಧ ಚಟುವಟಿಕೆಗಳು" loading="lazy" /><span class="workcard__badge">7</span></figure>
-          <figure class="workcard" aria-hidden="true"><img src="assets/media/banner/8.jpg" alt="ಜನಜಾಗೃತಿ ಮತ್ತು ಏಕತೆ ನಿರ್ಮಾಣ" loading="lazy" /><span class="workcard__badge">8</span></figure>
-          <figure class="workcard" aria-hidden="true"><img src="assets/media/banner/9.jpg" alt="ಸಂಕಷ್ಟದಲ್ಲಿರುವವರಿಗೆ ನೇರ ನೆರವು" loading="lazy" /><span class="workcard__badge">9</span></figure>
-          <figure class="workcard" aria-hidden="true"><img src="assets/media/banner/10.jpg" alt="ಕನ್ನಡಿಗರ ಸ್ವಾಭಿಮಾನ ಬಲಪಡಿಸುವ ಕಾರ್ಯ" loading="lazy" /><span class="workcard__badge">10</span></figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Aims / Objectives -->
-    <section class="section aims" id="aims">
-      <div class="container aims__grid">
-        <ul class="aims__list">
-          <li class="aims__item reveal"><span class="aims__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l7 3v6c0 4.4-3 8.5-7 9.9C8 19.5 5 15.4 5 11V5l7-3z"/></svg></span><span lang="kn">ಕನ್ನಡ ಭಾಷೆಯ ರಕ್ಷಣೆ ಮತ್ತು ಗೌರವ ವೃದ್ಧಿ</span></li>
-          <li class="aims__item reveal"><span class="aims__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l7 3v6c0 4.4-3 8.5-7 9.9C8 19.5 5 15.4 5 11V5l7-3z"/></svg></span><span lang="kn">ಕನ್ನಡಿಗರ ಉದ್ಯೋಗ ಹಕ್ಕಿಗೆ ದೃಢ ಬೆಂಬಲ</span></li>
-          <li class="aims__item reveal"><span class="aims__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l7 3v6c0 4.4-3 8.5-7 9.9C8 19.5 5 15.4 5 11V5l7-3z"/></svg></span><span lang="kn">ಸ್ಥಳೀಯ ಜನರ ಧ್ವನಿಗೆ ಶಕ್ತಿ</span></li>
-          <li class="aims__item reveal"><span class="aims__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l7 3v6c0 4.4-3 8.5-7 9.9C8 19.5 5 15.4 5 11V5l7-3z"/></svg></span><span lang="kn">ನಾಡಿನ ನೆಲ-ಜಲ ಸಂಪತ್ತಿನ ಸಂರಕ್ಷಣೆ</span></li>
-          <li class="aims__item reveal"><span class="aims__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l7 3v6c0 4.4-3 8.5-7 9.9C8 19.5 5 15.4 5 11V5l7-3z"/></svg></span><span lang="kn">ಸಾಮಾಜಿಕ ನ್ಯಾಯ ಮತ್ತು ಸಮಾನತೆ</span></li>
-          <li class="aims__item reveal"><span class="aims__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l7 3v6c0 4.4-3 8.5-7 9.9C8 19.5 5 15.4 5 11V5l7-3z"/></svg></span><span lang="kn">ರಾಜಕೀಯರಹಿತ ಜನಪರ ಹೋರಾಟ</span></li>
-          <li class="aims__item reveal"><span class="aims__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l7 3v6c0 4.4-3 8.5-7 9.9C8 19.5 5 15.4 5 11V5l7-3z"/></svg></span><span lang="kn">ಶಾಂತಿಪೂರ್ಣ ಹಾಗೂ ಕಾನೂನುಬದ್ಧ ಚಟುವಟಿಕೆಗಳು</span></li>
-          <li class="aims__item reveal"><span class="aims__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l7 3v6c0 4.4-3 8.5-7 9.9C8 19.5 5 15.4 5 11V5l7-3z"/></svg></span><span lang="kn">ಜನಜಾಗೃತಿ ಮತ್ತು ಏಕತೆ ನಿರ್ಮಾಣ</span></li>
-          <li class="aims__item reveal"><span class="aims__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l7 3v6c0 4.4-3 8.5-7 9.9C8 19.5 5 15.4 5 11V5l7-3z"/></svg></span><span lang="kn">ಸಂಕಷ್ಟದಲ್ಲಿರುವವರಿಗೆ ನೇರ ನೆರವು</span></li>
-          <li class="aims__item reveal"><span class="aims__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l7 3v6c0 4.4-3 8.5-7 9.9C8 19.5 5 15.4 5 11V5l7-3z"/></svg></span><span lang="kn">ಕನ್ನಡಿಗರ ಸ್ವಾಭಿಮಾನ ಬಲಪಡಿಸುವ ಕಾರ್ಯ</span></li>
-        </ul>
-        <figure class="aims__figure reveal">
-          <img src="assets/media/banner/organization.jpg" alt="ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ — ಕನ್ನಡ ಬಾವುಟದೊಂದಿಗೆ ನಾಯಕರು" loading="lazy" />
+    <!-- President -->
+    <section class="sec pres" id="leaders">
+      <div class="wrap pres__grid">
+        <figure class="pres__portrait" data-reveal="scale">
+          <span class="ring" aria-hidden="true"></span>
+          <div class="ph" data-tilt="7" data-glare><img src="assets/media/leaders/president.jpg" alt="ಹೆಚ್. ಶಿವರಾಮೇಗೌಡ" /></div>
+          <figcaption><b>H. Shivaramegowda</b><span lang="kn">ರಾಜ್ಯ ಅಧ್ಯಕ್ಷರು</span></figcaption>
         </figure>
-      </div>
-    </section>
-
-    <!-- Memories / Polaroid gallery -->
-    <section class="section memories" id="memories">
-      <div class="container memories__head">
-        <h2 class="section__title" lang="kn">ನಮ್ಮ ನೆನಪಿನ ಅಂಗಳ</h2>
-        <span class="memories__rule" aria-hidden="true"></span>
-        <p class="memories__sub" lang="kn">ಹೋರಾಟದ ಹಾದಿಯ ಸುಂದರ ಕ್ಷಣಗಳು</p>
-      </div>
-      <div class="memories__mask">
-        <div class="memories__track">
-          <div class="mem-page">
-            <figure class="polaroid" style="--rot:-2.5deg;"><span class="polaroid__tape" aria-hidden="true"></span><img src="assets/media/banner/banner-2.jpg" alt="ಗೌರವ ಸಮಾರಂಭ" loading="lazy" style="object-position:center;" /><figcaption lang="kn">ಗೌರವ ಸಮಾರಂಭ</figcaption></figure>
-            <figure class="polaroid" style="--rot:1.8deg;"><span class="polaroid__tape" aria-hidden="true"></span><img src="assets/media/banner/photo-1.png" alt="ಕನ್ನಡ ಬಾವುಟದ ಹೆಮ್ಮೆ" loading="lazy" style="object-position:center;" /><figcaption lang="kn">ಕನ್ನಡ ಬಾವುಟದ ಹೆಮ್ಮೆ</figcaption></figure>
-            <figure class="polaroid" style="--rot:-1.2deg;"><span class="polaroid__tape" aria-hidden="true"></span><img src="assets/media/banner/banner-3.jpg" alt="ನಾಡು ನುಡಿ ನೆಲ ಜಲ" loading="lazy" style="object-position:center;" /><figcaption lang="kn">ನಾಡು ನುಡಿ ನೆಲ ಜಲ</figcaption></figure>
-          </div>
-          <div class="mem-page">
-            <figure class="polaroid" style="--rot:2.6deg;"><span class="polaroid__tape" aria-hidden="true"></span><img src="assets/media/banner/bannat-5.png" alt="ಹೋರಾಟದ ಕ್ಷಣಗಳು" loading="lazy" style="object-position:right center;" /><figcaption lang="kn">ಹೋರಾಟದ ಕ್ಷಣಗಳು</figcaption></figure>
-            <figure class="polaroid" style="--rot:-2.0deg;"><span class="polaroid__tape" aria-hidden="true"></span><img src="assets/media/banner/banner-4.jpg" alt="ಜೈ ಕರ್ನಾಟಕ ಮಾತೆ" loading="lazy" style="object-position:center;" /><figcaption lang="kn">ಜೈ ಕರ್ನಾಟಕ ಮಾತೆ</figcaption></figure>
-            <figure class="polaroid" style="--rot:1.4deg;"><span class="polaroid__tape" aria-hidden="true"></span><img src="assets/media/banner/organization.jpg" alt="ವಿಧಾನಸೌಧದ ಮುಂದೆ" loading="lazy" style="object-position:center top;" /><figcaption lang="kn">ವಿಧಾನಸೌಧದ ಮುಂದೆ</figcaption></figure>
-          </div>
-          <div class="mem-page">
-            <figure class="polaroid" style="--rot:-2.5deg;" aria-hidden="true"><span class="polaroid__tape" aria-hidden="true"></span><img src="assets/media/banner/banner-2.jpg" alt="ಗೌರವ ಸಮಾರಂಭ" loading="lazy" style="object-position:center;" /><figcaption lang="kn">ಗೌರವ ಸಮಾರಂಭ</figcaption></figure>
-            <figure class="polaroid" style="--rot:1.8deg;" aria-hidden="true"><span class="polaroid__tape" aria-hidden="true"></span><img src="assets/media/banner/photo-1.png" alt="ಕನ್ನಡ ಬಾವುಟದ ಹೆಮ್ಮೆ" loading="lazy" style="object-position:center;" /><figcaption lang="kn">ಕನ್ನಡ ಬಾವುಟದ ಹೆಮ್ಮೆ</figcaption></figure>
-            <figure class="polaroid" style="--rot:-1.2deg;" aria-hidden="true"><span class="polaroid__tape" aria-hidden="true"></span><img src="assets/media/banner/banner-3.jpg" alt="ನಾಡು ನುಡಿ ನೆಲ ಜಲ" loading="lazy" style="object-position:center;" /><figcaption lang="kn">ನಾಡು ನುಡಿ ನೆಲ ಜಲ</figcaption></figure>
-          </div>
+        <div data-reveal="right">
+          <span class="eyebrow" lang="kn">ರಾಜ್ಯ ಅಧ್ಯಕ್ಷರ ನುಡಿ</span>
+          <blockquote class="pres__q" lang="kn"><span class="mk">“</span>ಕನ್ನಡವೇ ನಮ್ಮ ಉಸಿರು, ಕನ್ನಡವೇ ನಮ್ಮ ಶಕ್ತಿ. ನಾಡು-ನುಡಿಯ ರಕ್ಷಣೆ ನಮ್ಮ ಪ್ರಥಮ ಕರ್ತವ್ಯ.</blockquote>
+          <p class="pres__body" lang="kn">ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆಯು ಕನ್ನಡ ನಾಡು, ನುಡಿ ಮತ್ತು ನೆಲದ ರಕ್ಷಣೆಗಾಗಿ ಸದಾ ಕಾಲ ಶ್ರಮಿಸುತ್ತಿದೆ. ಕನ್ನಡಿಗರ ಸಬಲೀಕರಣ ಮತ್ತು ಅವರ ಹಕ್ಕುಗಳ ರಕ್ಷಣೆ ನಮ್ಮ ಸಂಘಟನೆಯ ಮುಖ್ಯ ಉದ್ದೇಶ.</p>
+          <p class="pres__jai" lang="kn">ಜೈ ಕರ್ನಾಟಕ ಮಾತೆ!</p>
         </div>
       </div>
     </section>
 
-    <!-- Articles / Publications -->
-    <section class="section articles" id="articles">
-      <div class="container">
-        <div class="section__head">
-          <span class="section__kicker" lang="kn">ಸಾಹಿತ್ಯ ಸಂಗ್ರಹ</span>
-          <h2 class="section__title" lang="kn">ನಮ್ಮ ಲೇಖನಗಳು</h2>
-          <p class="section__sub" lang="kn">ಕನ್ನಡ ಸಂಸ್ಕೃತಿ ಮತ್ತು ಇತಿಹಾಸದ ಮಾಹಿತಿ ಹಾಗೂ ನಮ್ಮ ವೇದಿಕೆಯ ಆಶಯಗಳ ಕುರಿತು ಸಮಗ್ರ ಲೇಖನಗಳು.</p>
-        </div>
-
-        <div class="articles__stage reveal">
-          <div class="articles__frame" id="articlesFrame">
-            <div class="articles__notch" aria-hidden="true"><span></span><span></span></div>
-            <div class="articles__screen">
-              <iframe class="articles__iframe" src="https://online.fliphtml5.com/lpnzs/lphq/" title="KRV Publication" loading="lazy" allowfullscreen></iframe>
-              <div class="articles__loading" aria-hidden="true">
-                <span class="articles__spinner"></span>
-                <span lang="kn">ಲೋಡಿಂಗ್ ಆಗುತ್ತಿದೆ...</span>
-              </div>
-            </div>
-            <div class="articles__bar" aria-hidden="true"></div>
-          </div>
-          <span class="articles__edition" aria-hidden="true">PUBLICATION EDITION 2024</span>
-        </div>
-
-        <div class="articles__cards">
-          <article class="artcard reveal">
-            <h4 lang="kn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h7a3 3 0 013 3v11a2.5 2.5 0 00-2.5-2.5H2z"/><path d="M22 5h-7a3 3 0 00-3 3v11a2.5 2.5 0 012.5-2.5H22z"/></svg> ಡಿಜಿಟಲ್ ಓದುಗ</h4>
-            <p lang="kn">ಈ ಸಂಚಿಕೆಯು ಕನ್ನಡ ನಾಡಿನ ಪರಂಪರೆಯನ್ನು ಆಧುನಿಕ ಓದುಗರಿಗೆ ತಲುಪಿಸಲು ರೂಪಿಸಲಾಗಿದೆ.</p>
-          </article>
-          <article class="artcard reveal">
-            <h4 lang="kn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 106 5.3L3 8"/><path d="M12 7v5l3 2"/></svg> ಸಂಶೋಧನಾ ಲೇಖನಗಳು</h4>
-            <p lang="kn">ನಾಡಿನ ಇತಿಹಾಸದ ಕುರಿತು ಪ್ರಾಜ್ಞರಿಂದ ಬರೆಯಲ್ಪಟ್ಟ ವಿಶಿಷ್ಟ ಮಾಹಿತಿ ಸಂಗ್ರಹ.</p>
-          </article>
-          <article class="artcard reveal">
-            <h4 lang="kn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg> ಜ್ಞಾನ ಹಂಚಿಕೆ</h4>
-            <p lang="kn">ನಮ್ಮ ಈ ಡಿಜಿಟಲ್ ಪುರವಣಿಯನ್ನು ನಿಮ್ಮ ಸ್ನೇಹಿತರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳುವ ಮೂಲಕ ಜಾಗೃತಿ ಮೂಡಿಸಿ.</p>
-          </article>
+    <!-- Stats -->
+    <section class="sec">
+      <div class="wrap">
+        <div class="stats__grid">
+          <div class="stat" data-reveal><div class="stat__n"><span data-n="31">0</span>+</div><div class="stat__l" lang="kn">ಜಿಲ್ಲೆಗಳು</div></div>
+          <div class="stat" data-reveal data-delay="90"><div class="stat__n"><span data-n="226">0</span>+</div><div class="stat__l" lang="kn">ತಾಲೂಕುಗಳು</div></div>
+          <div class="stat" data-reveal data-delay="180"><div class="stat__n"><span data-n="65">0</span><span class="k" lang="kn"> ಲಕ್ಷ</span>+</div><div class="stat__l" lang="kn">ಕಾರ್ಯಕರ್ತರು</div></div>
+          <div class="stat" data-reveal data-delay="270"><div class="stat__n"><span data-n="500">0</span>+</div><div class="stat__l" lang="kn">ಸಾಮಾಜಿಕ ಕಾರ್ಯಗಳು</div></div>
         </div>
       </div>
     </section>
 
-    <!-- Recent Struggles -->
-    <section class="section struggles" id="struggles">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="section__title" lang="kn">ಇತ್ತೀಚಿನ ಹೋರಾಟಗಳು</h2>
-          <span class="struggles__bar" aria-hidden="true"></span>
-          <p class="section__sub" lang="kn">ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆಯ ಹೋರಾಟದ ಹಾದಿ ಮತ್ತು ಸಂಘಟನೆಯ ಶಕ್ತಿ.</p>
-          <div class="struggles__cta"><a class="struggles__btn" href="#struggles" lang="kn">ಎಲ್ಲಾ ಹೋರಾಟಗಳನ್ನು ನೋಡಿ</a></div>
+    <!-- Objectives -->
+    <section class="sec" id="objectives">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>What we stand for</span>
+        <h2 class="h2" data-reveal lang="kn">ಜನಸ್ನೇಹಿ <span class="en">ಕಾರ್ಯಗಳು</span></h2>
+        <div class="aims__grid">
+          <div class="aim" data-reveal><span class="aim__n">01</span><span class="aim__t" lang="kn">ಕನ್ನಡ ಭಾಷೆಯ ರಕ್ಷಣೆ ಮತ್ತು ಗೌರವ ವೃದ್ಧಿ</span></div>
+          <div class="aim" data-reveal data-delay="60"><span class="aim__n">02</span><span class="aim__t" lang="kn">ಕನ್ನಡಿಗರ ಉದ್ಯೋಗ ಹಕ್ಕಿಗೆ ದೃಢ ಬೆಂಬಲ</span></div>
+          <div class="aim" data-reveal><span class="aim__n">03</span><span class="aim__t" lang="kn">ಸ್ಥಳೀಯ ಜನರ ಧ್ವನಿಗೆ ಶಕ್ತಿ</span></div>
+          <div class="aim" data-reveal data-delay="60"><span class="aim__n">04</span><span class="aim__t" lang="kn">ನಾಡಿನ ನೆಲ-ಜಲ ಸಂಪತ್ತಿನ ಸಂರಕ್ಷಣೆ</span></div>
+          <div class="aim" data-reveal><span class="aim__n">05</span><span class="aim__t" lang="kn">ಸಾಮಾಜಿಕ ನ್ಯಾಯ ಮತ್ತು ಸಮಾನತೆ</span></div>
+          <div class="aim" data-reveal data-delay="60"><span class="aim__n">06</span><span class="aim__t" lang="kn">ರಾಜಕೀಯರಹಿತ ಜನಪರ ಹೋರಾಟ</span></div>
+          <div class="aim" data-reveal><span class="aim__n">07</span><span class="aim__t" lang="kn">ಶಾಂತಿಪೂರ್ಣ ಹಾಗೂ ಕಾನೂನುಬದ್ಧ ಚಟುವಟಿಕೆಗಳು</span></div>
+          <div class="aim" data-reveal data-delay="60"><span class="aim__n">08</span><span class="aim__t" lang="kn">ಜನಜಾಗೃತಿ ಮತ್ತು ಏಕತೆ ನಿರ್ಮಾಣ</span></div>
+          <div class="aim" data-reveal><span class="aim__n">09</span><span class="aim__t" lang="kn">ಸಂಕಷ್ಟದಲ್ಲಿರುವವರಿಗೆ ನೇರ ನೆರವು</span></div>
+          <div class="aim" data-reveal data-delay="60"><span class="aim__n">10</span><span class="aim__t" lang="kn">ಕನ್ನಡಿಗರ ಸ್ವಾಭಿಮಾನ ಬಲಪಡಿಸುವ ಕಾರ್ಯ</span></div>
         </div>
-      </div>
-      <div class="struggles__carousel">
-        <button class="struggles__arrow struggles__arrow--prev" id="strPrev" aria-label="Previous" type="button">&#8249;</button>
-        <div class="struggles__track" id="strugglesTrack">
-          <article class="struggle reveal">
-            <div class="struggle__media">
-              <span class="struggle__badge" lang="kn">ಕರ್ನಾಟಕ</span>
-              <img src="assets/media/banner/bannat-5.png" alt="ಕನ್ನಡದ ಪರ ನಡೆದ ಹೋರಾಟ" loading="lazy" style="object-position:right center;" />
-            </div>
-            <div class="struggle__body">
-              <span class="struggle__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v3M17 3v3M3.5 9h17M5 5h14a1.5 1.5 0 011.5 1.5V19A1.5 1.5 0 0119 20.5H5A1.5 1.5 0 013.5 19V6.5A1.5 1.5 0 015 5z"/></svg><span>20 JUL 2026</span></span>
-              <h3 lang="kn">ಕನ್ನಡದ ಪರ ನಡೆದ ಹೋರಾಟ</h3>
-              <a class="struggle__more" href="#struggles" lang="kn">ಇನ್ನಷ್ಟು ಓದಿ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 4.5L21 12l-7.5 7.5M21 12H3"/></svg></a>
-            </div>
-          </article>
-          <article class="struggle reveal">
-            <div class="struggle__media">
-              <span class="struggle__badge" lang="kn">ಬೆಂಗಳೂರು ನಗರ</span>
-              <img src="assets/media/banner/banner-2.jpg" alt="ಉದ್ಯೋಗದಲ್ಲಿ ಕನ್ನಡಿಗರಿಗೆ ಮೀಸಲಾತಿಗೆ ಆಗ್ರಹಿಸಿ ಪ್ರತಿಭಟನೆ." loading="lazy" style="object-position:center;" />
-            </div>
-            <div class="struggle__body">
-              <span class="struggle__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v3M17 3v3M3.5 9h17M5 5h14a1.5 1.5 0 011.5 1.5V19A1.5 1.5 0 0119 20.5H5A1.5 1.5 0 013.5 19V6.5A1.5 1.5 0 015 5z"/></svg><span>20 JUL 2026</span></span>
-              <h3 lang="kn">ಉದ್ಯೋಗದಲ್ಲಿ ಕನ್ನಡಿಗರಿಗೆ ಮೀಸಲಾತಿಗೆ ಆಗ್ರಹಿಸಿ ಪ್ರತಿಭಟನೆ.</h3>
-              <a class="struggle__more" href="#struggles" lang="kn">ಇನ್ನಷ್ಟು ಓದಿ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 4.5L21 12l-7.5 7.5M21 12H3"/></svg></a>
-            </div>
-          </article>
-          <article class="struggle reveal">
-            <div class="struggle__media">
-              <span class="struggle__badge" lang="kn">ಬೆಂಗಳೂರು ನಗರ</span>
-              <img src="assets/media/banner/banner-4.jpg" alt="ಕಮಲಹಾಸನ್ ವಿರುದ್ಧ ಚಲನಚಿತ್ರ ವಾಣಿಜ್ಯ ಮಂಡಳಿ ಮುಂದೆ ಪ್ರತಿಭಟನೆ" loading="lazy" style="object-position:center;" />
-            </div>
-            <div class="struggle__body">
-              <span class="struggle__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v3M17 3v3M3.5 9h17M5 5h14a1.5 1.5 0 011.5 1.5V19A1.5 1.5 0 0119 20.5H5A1.5 1.5 0 013.5 19V6.5A1.5 1.5 0 015 5z"/></svg><span>20 JUL 2026</span></span>
-              <h3 lang="kn">ಕಮಲಹಾಸನ್ ವಿರುದ್ಧ ಚಲನಚಿತ್ರ ವಾಣಿಜ್ಯ ಮಂಡಳಿ ಮುಂದೆ ಪ್ರತಿಭಟನೆ</h3>
-              <a class="struggle__more" href="#struggles" lang="kn">ಇನ್ನಷ್ಟು ಓದಿ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 4.5L21 12l-7.5 7.5M21 12H3"/></svg></a>
-            </div>
-          </article>
-          <article class="struggle reveal">
-            <div class="struggle__media">
-              <span class="struggle__badge" lang="kn">ಬೆಳಗಾವಿ</span>
-              <img src="assets/media/banner/banner-3.jpg" alt="ಬೆಳಗಾವಿ ಜಿಲ್ಲಾಧಿಕಾರಿ ಮಹಮ್ಮದ್ ರೋಷನ್ ವಿರುದ್ಧ ಪ್ರತಿಭಟನೆ" loading="lazy" style="object-position:center;" />
-            </div>
-            <div class="struggle__body">
-              <span class="struggle__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v3M17 3v3M3.5 9h17M5 5h14a1.5 1.5 0 011.5 1.5V19A1.5 1.5 0 0119 20.5H5A1.5 1.5 0 013.5 19V6.5A1.5 1.5 0 015 5z"/></svg><span>20 JUL 2026</span></span>
-              <h3 lang="kn">ಬೆಳಗಾವಿ ಜಿಲ್ಲಾಧಿಕಾರಿ ಮಹಮ್ಮದ್ ರೋಷನ್ ವಿರುದ್ಧ ಪ್ರತಿಭಟನೆ</h3>
-              <a class="struggle__more" href="#struggles" lang="kn">ಇನ್ನಷ್ಟು ಓದಿ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 4.5L21 12l-7.5 7.5M21 12H3"/></svg></a>
-            </div>
-          </article>
-        </div>
-        <button class="struggles__arrow struggles__arrow--next" id="strNext" aria-label="Next" type="button">&#8250;</button>
       </div>
     </section>
 
-    <!-- Video Library -->
-    <section class="section videolib" id="videolib">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="section__title" lang="kn">ವಿಡಿಯೋ ಲೈಬ್ರರಿ</h2>
-          <span class="videolib__bar" aria-hidden="true"></span>
-        </div>
-        <div class="videolib__player reveal">
-          <div class="videolib__screen">
-            <img id="videoMain" src="assets/media/banner/banner-2.jpg" alt="ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ ವಿಡಿಯೋ" />
-            <button class="videolib__play" type="button" aria-label="Play video"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+    <!-- Activities: 3D cover-flow -->
+    <section class="sec flow" id="work">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>In the field</span>
+        <h2 class="h2" data-reveal lang="kn">ನಮ್ಮ <span class="en">ಹೆಜ್ಜೆ</span>ಗಳು</h2>
+      </div>
+      <div class="wrap">
+        <div class="flow__stage" id="flowStage" aria-label="Activities carousel">
+          <div class="flow__track">
+            <div class="card3d"><img src="assets/media/banner/1.jpg" alt="" /><div class="card3d__cap"><span lang="kn">ಭಾಷಾ ರಕ್ಷಣೆ</span><b>01</b></div></div>
+            <div class="card3d"><img src="assets/media/banner/2.jpg" alt="" /><div class="card3d__cap"><span lang="kn">ಉದ್ಯೋಗ ಹಕ್ಕು</span><b>02</b></div></div>
+            <div class="card3d"><img src="assets/media/banner/3.jpg" alt="" /><div class="card3d__cap"><span lang="kn">ಜನರ ಧ್ವನಿ</span><b>03</b></div></div>
+            <div class="card3d"><img src="assets/media/banner/4.jpg" alt="" /><div class="card3d__cap"><span lang="kn">ನೆಲ-ಜಲ</span><b>04</b></div></div>
+            <div class="card3d"><img src="assets/media/banner/5.jpg" alt="" /><div class="card3d__cap"><span lang="kn">ಸಾಮಾಜಿಕ ನ್ಯಾಯ</span><b>05</b></div></div>
+            <div class="card3d"><img src="assets/media/banner/6.jpg" alt="" /><div class="card3d__cap"><span lang="kn">ಜನಪರ ಹೋರಾಟ</span><b>06</b></div></div>
+            <div class="card3d"><img src="assets/media/banner/7.jpg" alt="" /><div class="card3d__cap"><span lang="kn">ಕಾನೂನುಬದ್ಧ</span><b>07</b></div></div>
+            <div class="card3d"><img src="assets/media/banner/8.jpg" alt="" /><div class="card3d__cap"><span lang="kn">ಜನಜಾಗೃತಿ</span><b>08</b></div></div>
+            <div class="card3d"><img src="assets/media/banner/9.jpg" alt="" /><div class="card3d__cap"><span lang="kn">ನೇರ ನೆರವು</span><b>09</b></div></div>
+            <div class="card3d"><img src="assets/media/banner/10.jpg" alt="" /><div class="card3d__cap"><span lang="kn">ಸ್ವಾಭಿಮಾನ</span><b>10</b></div></div>
           </div>
         </div>
-        <div class="videolib__thumbs" id="videoThumbs">
-          <button class="vthumb is-active" type="button" data-full="assets/media/banner/banner-2.jpg" aria-label="Play video"><img src="assets/media/banner/banner-2.jpg" alt="" loading="lazy" style="object-position:center;" /><span class="vthumb__play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.4l6 3.6-6 3.6z" fill="currentColor" stroke="none"/></svg></span></button>
-          <button class="vthumb" type="button" data-full="assets/media/banner/banner-3.jpg" aria-label="Play video"><img src="assets/media/banner/banner-3.jpg" alt="" loading="lazy" style="object-position:center;" /><span class="vthumb__play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.4l6 3.6-6 3.6z" fill="currentColor" stroke="none"/></svg></span></button>
-          <button class="vthumb" type="button" data-full="assets/media/banner/banner-4.jpg" aria-label="Play video"><img src="assets/media/banner/banner-4.jpg" alt="" loading="lazy" style="object-position:center;" /><span class="vthumb__play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.4l6 3.6-6 3.6z" fill="currentColor" stroke="none"/></svg></span></button>
-          <button class="vthumb" type="button" data-full="assets/media/banner/bannat-5.png" aria-label="Play video"><img src="assets/media/banner/bannat-5.png" alt="" loading="lazy" style="object-position:right center;" /><span class="vthumb__play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.4l6 3.6-6 3.6z" fill="currentColor" stroke="none"/></svg></span></button>
-          <button class="vthumb" type="button" data-full="assets/media/banner/organization.jpg" aria-label="Play video"><img src="assets/media/banner/organization.jpg" alt="" loading="lazy" style="object-position:center top;" /><span class="vthumb__play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.4l6 3.6-6 3.6z" fill="currentColor" stroke="none"/></svg></span></button>
+        <div class="flow__ctrl">
+          <button class="flow__btn" id="flowPrev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <div class="flow__dots" id="flowDots"></div>
+          <button class="flow__btn" id="flowNext" type="button" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
         </div>
       </div>
     </section>
 
-    <!-- Recent Events -->
-    <section class="section events" id="events">
-      <div class="container">
-        <div class="events__head">
-          <div>
-            <span class="events__badge" lang="kn"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 16a6 6 0 0 0 6-6c0-1.65-1.35-3-3-3-.33 0-.65.05-.95.15a4.404 4.404 0 0 0-4.1-3.65c-.17 0-.33.02-.5.05C5.45 2.05 4 3.85 4 6c0 1.65 1.35 3 3 3 .33 0 .65-.05.95-.15.3.6.45 1.25.45 1.9a3.5 3.5 0 0 1-3.5 3.5c-.17 0-.33-.02-.5-.05.45.8 1.4 1.3 2.5 1.3z"/></svg>ನಮ್ಮ ಕಾರ್ಯಕ್ರಮಗಳು</span>
-            <h2 class="events__title" lang="kn">ಇತ್ತೀಚಿನ ಕಾರ್ಯಕ್ರಮಗಳು</h2>
-          </div>
-          <a class="events__more" href="#chitrashale" lang="kn">ಇನ್ನಷ್ಟು ನೋಡಿ <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg></a>
-        </div>
-        <div class="events__grid">
-          <article class="eventcard eventcard--gold reveal">
-            <img src="assets/media/banner/banner-2.jpg" alt="ಜನ್ಮದಿನದ ಆಚರಣೆ" loading="lazy" style="object-position:center;" />
-            <div class="eventcard__inner">
-              <span class="eventcard__badge" lang="kn">ಬೆಂಗಳೂರು ನಗರ</span>
-              <div>
-                <div class="eventcard__meta">
-                  <span lang="kn"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>20 Jul 2026</span>
-                  <span lang="kn"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>ಬೆಂಗಳೂರು ನಗರ</span>
-                </div>
-                <h3 class="eventcard__title" lang="kn">ಜನ್ಮದಿನದ ಆಚರಣೆ</h3>
-                <a class="eventcard__link" href="#chitrashale" lang="kn">ಇನ್ನಷ್ಟು ಓದಿ <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/></svg></a>
-              </div>
-            </div>
-          </article>
-          <article class="eventcard reveal">
-            <img src="assets/media/banner/banner-4.jpg" alt="ಶ್ರೀ ಕರವೇ ರಜತ ಮಹೋತ್ಸವ ಕಾರ್ಯಕ್ರಮ 2025" loading="lazy" style="object-position:center;" />
-            <div class="eventcard__inner">
-              <span class="eventcard__badge" lang="kn">ಬೆಂಗಳೂರು ನಗರ</span>
-              <div>
-                <div class="eventcard__meta">
-                  <span lang="kn"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>20 Jul 2026</span>
-                  <span lang="kn"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>ಬೆಂಗಳೂರು ನಗರ</span>
-                </div>
-                <h3 class="eventcard__title" lang="kn">ಶ್ರೀ ಕರವೇ ರಜತ ಮಹೋತ್ಸವ ಕಾರ್ಯಕ್ರಮ 2025</h3>
-                <a class="eventcard__link" href="#chitrashale" lang="kn">ಇನ್ನಷ್ಟು ಓದಿ <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/></svg></a>
-              </div>
-            </div>
-          </article>
-          <article class="eventcard reveal">
-            <img src="assets/media/banner/banner-3.jpg" alt="ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಆಚರಣೆ" loading="lazy" style="object-position:center;" />
-            <div class="eventcard__inner">
-              <span class="eventcard__badge" lang="kn">ಕರ್ನಾಟಕ</span>
-              <div>
-                <div class="eventcard__meta">
-                  <span lang="kn"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>20 Jul 2026</span>
-                  <span lang="kn"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>ಕರ್ನಾಟಕ</span>
-                </div>
-                <h3 class="eventcard__title" lang="kn">ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಆಚರಣೆ</h3>
-                <a class="eventcard__link" href="#chitrashale" lang="kn">ಇನ್ನಷ್ಟು ಓದಿ <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/></svg></a>
-              </div>
-            </div>
-          </article>
-          <article class="eventcard reveal">
-            <img src="assets/media/banner/bannat-5.png" alt="ರಕ್ತದಾನ ಶಿಬಿರ" loading="lazy" style="object-position:right center;" />
-            <div class="eventcard__inner">
-              <span class="eventcard__badge" lang="kn">ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ</span>
-              <div>
-                <div class="eventcard__meta">
-                  <span lang="kn"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>20 Jul 2026</span>
-                  <span lang="kn"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ</span>
-                </div>
-                <h3 class="eventcard__title" lang="kn">ರಕ್ತದಾನ ಶಿಬಿರ</h3>
-                <a class="eventcard__link" href="#chitrashale" lang="kn">ಇನ್ನಷ್ಟು ಓದಿ <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/></svg></a>
-              </div>
-            </div>
-          </article>
+    <!-- Events -->
+    <section class="sec" id="events">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Recent programmes</span>
+        <h2 class="h2" data-reveal lang="kn">ಹೋರಾಟದ <span class="en">ಹಾದಿ</span></h2>
+        <div class="ev__grid">
+          <article class="ev" data-reveal><img src="assets/media/banner/banner-2.jpg" alt="" /><div class="ev__in"><span class="ev__b" lang="kn">ಬೆಂಗಳೂರು ನಗರ</span><div><div class="ev__d">20 Jul 2026</div><h3 class="ev__t" lang="kn">ಜನ್ಮದಿನದ ಆಚರಣೆ</h3><span class="ev__more" lang="kn">ಇನ್ನಷ್ಟು →</span></div></div></article>
+          <article class="ev" data-reveal data-delay="90"><img src="assets/media/banner/banner-4.jpg" alt="" /><div class="ev__in"><span class="ev__b" lang="kn">ಬೆಂಗಳೂರು ನಗರ</span><div><div class="ev__d">20 Jul 2026</div><h3 class="ev__t" lang="kn">ಕರವೇ ರಜತ ಮಹೋತ್ಸವ 2025</h3><span class="ev__more" lang="kn">ಇನ್ನಷ್ಟು →</span></div></div></article>
+          <article class="ev" data-reveal data-delay="180"><img src="assets/media/banner/banner-3.jpg" alt="" /><div class="ev__in"><span class="ev__b" lang="kn">ಕರ್ನಾಟಕ</span><div><div class="ev__d">20 Jul 2026</div><h3 class="ev__t" lang="kn">ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಆಚರಣೆ</h3><span class="ev__more" lang="kn">ಇನ್ನಷ್ಟು →</span></div></div></article>
+          <article class="ev" data-reveal data-delay="270"><img src="assets/media/banner/organization.jpg" alt="" /><div class="ev__in"><span class="ev__b" lang="kn">ಬೆಂ. ಗ್ರಾಮಾಂತರ</span><div><div class="ev__d">20 Jul 2026</div><h3 class="ev__t" lang="kn">ರಕ್ತದಾನ ಶಿಬಿರ</h3><span class="ev__more" lang="kn">ಇನ್ನಷ್ಟು →</span></div></div></article>
         </div>
       </div>
     </section>
 
-    <!-- Namma Chitrashale (photo gallery grid) -->
-    <section class="section chitra" id="chitrashale">
-      <div class="container">
-        <div class="chitra__head">
-          <h2 lang="kn">ನಮ್ಮ ಚಿತ್ರಶಾಲೆ</h2>
-          <p lang="kn">ಹೋರಾಟದ ಹಾದಿಯ ಸುಂದರ ಕ್ಷಣಗಳು</p>
-        </div>
-        <div class="chitra__grid">
-          <figure class="chitra__item reveal"><img src="assets/media/banner/1.jpg" alt="ನಮ್ಮ ಚಿತ್ರಶಾಲೆ" loading="lazy" /></figure>
-          <figure class="chitra__item reveal"><img src="assets/media/banner/2.jpg" alt="ನಮ್ಮ ಚಿತ್ರಶಾಲೆ" loading="lazy" /></figure>
-          <figure class="chitra__item reveal"><img src="assets/media/banner/3.jpg" alt="ನಮ್ಮ ಚಿತ್ರಶಾಲೆ" loading="lazy" /></figure>
-          <figure class="chitra__item reveal"><img src="assets/media/banner/4.jpg" alt="ನಮ್ಮ ಚಿತ್ರಶಾಲೆ" loading="lazy" /></figure>
-          <figure class="chitra__item reveal"><img src="assets/media/banner/5.jpg" alt="ನಮ್ಮ ಚಿತ್ರಶಾಲೆ" loading="lazy" /></figure>
-          <figure class="chitra__item reveal"><img src="assets/media/banner/6.jpg" alt="ನಮ್ಮ ಚಿತ್ರಶಾಲೆ" loading="lazy" /></figure>
-          <figure class="chitra__item reveal"><img src="assets/media/banner/7.jpg" alt="ನಮ್ಮ ಚಿತ್ರಶಾಲೆ" loading="lazy" /></figure>
-          <figure class="chitra__item reveal"><img src="assets/media/banner/8.jpg" alt="ನಮ್ಮ ಚಿತ್ರಶಾಲೆ" loading="lazy" /></figure>
-        </div>
-        <div class="chitra__cta">
-          <a class="chitra__btn" href="#chitrashale" lang="kn">ಚಿತ್ರಶಾಲೆಗೆ ಭೇಟಿ ನೀಡಿ</a>
+    <!-- Gallery -->
+    <section class="sec" id="gallery">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Namma Chitrashale</span>
+        <h2 class="h2" data-reveal lang="kn">ಸುಂದರ <span class="en">ಕ್ಷಣಗಳು</span></h2>
+        <div class="gal__grid">
+          <div class="gal__i" data-reveal="scale"><img src="assets/media/banner/bannat-5.png" alt="" /></div>
+          <div class="gal__i" data-reveal="scale" data-delay="60"><img src="assets/media/banner/banner-2.jpg" alt="" /></div>
+          <div class="gal__i" data-reveal="scale" data-delay="120"><img src="assets/media/banner/banner-3.jpg" alt="" /></div>
+          <div class="gal__i" data-reveal="scale" data-delay="60"><img src="assets/media/banner/photo-1.png" alt="" /></div>
+          <div class="gal__i" data-reveal="scale" data-delay="120"><img src="assets/media/banner/banner-4.jpg" alt="" /></div>
+          <div class="gal__i" data-reveal="scale" data-delay="180"><img src="assets/media/banner/6.jpg" alt="" /></div>
         </div>
       </div>
     </section>
 
+    <!-- Join -->
+    <section class="sec join" id="join">
+      <div class="join__bg" aria-hidden="true"><img src="assets/media/banner/banner-3.jpg" alt="" data-para="0.06" /></div>
+      <div class="wrap join__in">
+        <span class="eyebrow" data-reveal style="justify-content:center">Join the movement</span>
+        <h2 class="join__t" data-reveal data-delay="80" lang="kn">ನಮ್ಮೊಂದಿಗೆ <em>ಕೈಜೋಡಿಸಿ</em></h2>
+        <p class="join__p" data-reveal data-delay="160" lang="kn">ಕನ್ನಡ ನಾಡು-ನುಡಿಯ ರಕ್ಷಣೆಯ ಈ ಹೋರಾಟದಲ್ಲಿ ನೀವೂ ಭಾಗಿಯಾಗಿ. ಪ್ರತಿ ಹಳ್ಳಿಯಲ್ಲೂ ಕನ್ನಡದ ಬಾವುಟ ಹಾರಲಿ.</p>
+        <a class="btn btn--fill" data-reveal data-delay="240" href="#contact" lang="kn">ಸದಸ್ಯರಾಗಿ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
-  <footer class="footer" id="contact">
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <a class="brand brand--footer" href="#top" aria-label="Karnataka Rakshana Vedike home">
-          <span class="brand__mark" aria-hidden="true"><span class="brand__flag"></span></span>
-          <span class="brand__text">
-            <strong>Karnataka Rakshana Vedike</strong>
-            <small lang="kn">ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ</small>
-          </span>
-        </a>
-        <p lang="kn">ಕನ್ನಡ, ಕನ್ನಡಿಗ ಮತ್ತು ಕರ್ನಾಟಕದ ಶ್ರೇಯಸ್ಸಿಗಾಗಿ ನಮ್ಮ ಬದ್ಧತೆ.</p>
-        <form class="footer__search" role="search" onsubmit="return false;">
-          <input type="text" placeholder="ಹುಡುಕಿ..." aria-label="Search" lang="kn" />
-          <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></button>
-        </form>
-      </div>
-
-      <nav class="footer__col" aria-label="Explore">
-        <h4 lang="kn">ಇನ್ನಷ್ಟು</h4>
-        <a href="#aims" lang="kn">ನಮ್ಮ ಸಂಘಟನೆಯ ಬಗ್ಗೆ</a>
-        <a href="#leaders" lang="kn">ನಮ್ಮ ನಾಯಕರು</a>
-        <a href="#events" lang="kn">ಸಾಮಾಜಿಕ ಕಾರ್ಯಕ್ರಮಗಳು</a>
-        <a href="#struggles" lang="kn">ಹೋರಾಟಗಳು</a>
-        <a href="#stats" lang="kn">ಜಿಲ್ಲೆಗಳು</a>
-        <a href="#chitrashale" lang="kn">ಗ್ಯಾಲರಿ</a>
-      </nav>
-
-      <div class="footer__col footer__contact">
-        <h4 lang="kn">ಸಂಪರ್ಕ ಮಾಹಿತಿ</h4>
-        <div class="footer__cItem">
-          <span class="footer__cIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></span>
-          <div><h5 lang="kn">ಕಚೇರಿ ವಿಳಾಸ</h5><p lang="kn">ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ ಕೇಂದ್ರ ಕಚೇರಿ, ಮಲ್ಲೇಶ್ವರಂ, ಬೆಂಗಳೂರು, ಕರ್ನಾಟಕ - 560003</p></div>
-        </div>
-        <div class="footer__cItem">
-          <span class="footer__cIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></span>
-          <div><h5 lang="kn">ದೂರವಾಣಿ ಸಂಖ್ಯೆ</h5><p><a href="tel:+919902211070">+91 99022 11070</a></p></div>
-        </div>
-        <div class="footer__cItem">
-          <span class="footer__cIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></span>
-          <div><h5 lang="kn">ಇಮೇಲ್</h5><p><a href="mailto:karaveshi@gmail.com">karaveshi@gmail.com</a></p></div>
-        </div>
-      </div>
-
-      <div class="footer__col footer__follow">
-        <h4 lang="kn">ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ</h4>
-        <div class="footer__social">
+  <footer class="foot" id="contact">
+    <div class="wrap foot__grid">
+      <div>
+        <a class="brand" href="#top"><span class="brand__f" aria-hidden="true"></span><span class="brand__t"><strong>Karnataka Rakshana Vedike</strong><small lang="kn">ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ</small></span></a>
+        <p class="foot__p" lang="kn">ಕನ್ನಡ, ಕನ್ನಡಿಗ ಮತ್ತು ಕರ್ನಾಟಕದ ಶ್ರೇಯಸ್ಸಿಗಾಗಿ ನಮ್ಮ ಬದ್ಧತೆ. — 1999 ರಿಂದ.</p>
+        <div class="foot__soc">
           <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.14H7.07V11h2.43v9h4.5v-9h3.18l.59-3.54z"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
-          <a href="#" aria-label="Message"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zm0 10.16A4 4 0 1116 12a4 4 0 01-4 4zm6.41-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.12-2.13C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.52A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.12 2.13C4.5 20.45 12 20.45 12 20.45s7.5 0 9.38-.52a3 3 0 002.12-2.13A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.55 15.57V8.43L15.82 12z"/></svg></a>
         </div>
-        <div class="footer__news">
-          <h5 lang="kn">ನವೀಕರಣಗಳನ್ನು ಪಡೆಯಿರಿ</h5>
-          <p lang="kn">ನಮ್ಮ ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳ ಮಾಹಿತಿಯನ್ನು ಪಡೆಯಿರಿ.</p>
-          <form class="footer__newsform" id="newsForm">
-            <input type="email" placeholder="ನಿಮ್ಮ ಇಮೇಲ್ ನಮೂದಿಸಿ" aria-label="Email" lang="kn" required />
-            <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg></button>
-          </form>
-          <p class="footer__newsnote" id="newsNote" role="status"></p>
-        </div>
+      </div>
+      <nav class="foot__col" aria-label="Explore">
+        <h4>Explore</h4>
+        <a href="#about" lang="kn">ನಮ್ಮ ಬಗ್ಗೆ</a>
+        <a href="#leaders" lang="kn">ಅಧ್ಯಕ್ಷರ ನುಡಿ</a>
+        <a href="#work" lang="kn">ಜನಸ್ನೇಹಿ ಕಾರ್ಯ</a>
+        <a href="#events" lang="kn">ಕಾರ್ಯಕ್ರಮಗಳು</a>
+        <a href="#gallery" lang="kn">ಚಿತ್ರಶಾಲೆ</a>
+      </nav>
+      <div>
+        <h4>Reach us</h4>
+        <p class="foot__p" lang="kn">ಕೇಂದ್ರ ಕಚೇರಿ, ಮಲ್ಲೇಶ್ವರಂ, ಬೆಂಗಳೂರು, ಕರ್ನಾಟಕ — 560003</p>
+        <a class="foot__col" href="tel:+919902211070" style="display:inline-block">+91 99022 11070</a><br />
+        <a class="foot__col" href="mailto:karaveshi@gmail.com" style="display:inline-block">karaveshi@gmail.com</a>
       </div>
     </div>
-    <div class="container footer__bar">
-      <p lang="kn">© ಶಿವರಾಮೇಗೌಡರ ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ · <span id="year">2026</span></p>
-      <p class="footer__made" lang="kn">ಕನ್ನಡವೇ ಸತ್ಯ ಕನ್ನಡವೇ ನಿತ್ಯ</p>
+    <div class="wrap foot__bar">
+      <p lang="kn">© <span id="yr">2026</span> ಶಿವರಾಮೇಗೌಡರ ಕರ್ನಾಟಕ ರಕ್ಷಣಾ ವೇದಿಕೆ</p>
+      <p lang="kn"><b>ಕನ್ನಡವೇ ಸತ್ಯ · ಕನ್ನಡವೇ ನಿತ್ಯ</b></p>
     </div>
   </footer>
 
-  <script src="assets/main.js"></script>
+  <script src="assets/main2.js"></script>
 </body>
 </html>
