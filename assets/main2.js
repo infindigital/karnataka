@@ -11,6 +11,11 @@
 
   /* ---- Nav state + progress ---- */
   var nav = doc.getElementById("nav"), bar = doc.getElementById("bar"), heroImg = doc.getElementById("heroImg");
+  var heroVid = doc.getElementById("heroVid");
+  if (heroVid) {
+    if (reduce) { heroVid.removeAttribute("autoplay"); try { heroVid.pause(); } catch (e) {} }
+    else { var p = heroVid.play(); if (p && p.catch) p.catch(function () {}); }
+  }
   function onScroll() {
     var sy = window.scrollY;
     if (nav) nav.classList.toggle("is-solid", sy > 40);

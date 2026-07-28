@@ -47,7 +47,13 @@
   <main id="top">
     <!-- Hero: full-screen cinematic -->
     <section class="hero hero--cine" id="hero">
-      <div class="hero__img" id="heroImg" aria-hidden="true"><img src="assets/media/banner/bannat-5.png" alt="" /></div>
+      <div class="hero__img" id="heroImg" aria-hidden="true">
+        <video class="hero__vid" id="heroVid" autoplay muted loop playsinline preload="auto" poster="assets/media/video/hero-poster.jpg">
+          <source src="assets/media/video/hero.webm" type="video/webm" />
+          <source src="assets/media/video/hero.mp4" type="video/mp4" />
+          <img src="assets/media/banner/bannat-5.png" alt="" />
+        </video>
+      </div>
       <div class="hero__grad" aria-hidden="true"></div>
       <div class="hero__vig" aria-hidden="true"></div>
       <div class="wrap hero__in hero__in--center">
