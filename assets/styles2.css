@@ -203,6 +203,15 @@ body::after {
 .about__sign i { width: 44px; height: 2px; background: linear-gradient(90deg, var(--gold), var(--crimson)); }
 .about__sign span { font-family: var(--knb); color: var(--bone-3); font-size: .9rem; }
 
+/* ---------- Interactive 3D tilt ---------- */
+[data-tilt], .gal__i { transition: transform .5s var(--e-out); }
+[data-tilt], .gal__i, .vcard { transform-style: preserve-3d; }
+.is-tilting { transition: transform .1s linear !important; }
+.tilt-glare { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 4; opacity: 0;
+  background: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%), rgba(255,255,255,.34), rgba(255,255,255,0) 55%);
+  mix-blend-mode: soft-light; transition: opacity .35s; }
+.is-tilting .tilt-glare { opacity: 1; }
+
 /* ---------- About v2 (intro + values + cta) ---------- */
 .h2 .hl { color: var(--gold-2); }
 @media (min-width: 900px) { .about__grid--v2 { grid-template-columns: .92fr 1.08fr; } }
