@@ -203,6 +203,41 @@ body::after {
 .about__sign i { width: 44px; height: 2px; background: linear-gradient(90deg, var(--gold), var(--crimson)); }
 .about__sign span { font-family: var(--knb); color: var(--bone-3); font-size: .9rem; }
 
+/* ---------- About v2 (intro + values + cta) ---------- */
+.h2 .hl { color: var(--gold-2); }
+@media (min-width: 900px) { .about__grid--v2 { grid-template-columns: .92fr 1.08fr; } }
+.about__quote { font-family: var(--kn); font-weight: 600; font-size: clamp(1.14rem, 2.2vw, 1.5rem); line-height: 1.55; color: var(--bone); border-left: 3px solid var(--gold); padding: .25rem 0 .25rem 1.3rem; margin-top: 1.7rem; }
+.frame--tall { aspect-ratio: 3 / 4; border-radius: 14px; box-shadow: 0 40px 70px -30px rgba(0,0,0,.8); }
+.frame--tall img { height: 112%; }
+.frame__cap { position: absolute; inset: 0; display: flex; align-items: flex-end; padding: clamp(1.4rem, 3vw, 2.4rem);
+  background: linear-gradient(to top, color-mix(in srgb, var(--crimson) 66%, transparent) 0%, rgba(18,14,10,.2) 42%, transparent 68%); }
+.frame__cap p { margin: 0; font-family: var(--kn); font-weight: 700; font-size: clamp(1.2rem, 2.4vw, 1.7rem); color: #fff; text-shadow: 0 4px 16px rgba(0,0,0,.45); }
+
+.values { margin-top: clamp(4rem, 8vw, 6.5rem); }
+.values__head { display: flex; flex-direction: column; align-items: center; gap: 1rem; text-align: center; }
+.values__head .h2 { margin-top: 0; }
+.values__rule { width: 64px; height: 3px; border-radius: 2px; background: linear-gradient(90deg, var(--gold), var(--crimson)); }
+.values__grid { display: grid; grid-template-columns: 1fr; gap: clamp(1rem, 2vw, 1.5rem); margin-top: clamp(2.4rem, 5vw, 3.5rem); }
+@media (min-width: 820px) { .values__grid { grid-template-columns: repeat(3, 1fr); } }
+.vcard { background: var(--ink-2); border: 1px solid var(--line); border-radius: 18px; padding: clamp(1.8rem, 3vw, 2.6rem); display: flex; flex-direction: column; gap: 1.1rem;
+  transition: border-color .35s, transform .35s var(--e-out), background .35s, box-shadow .35s; }
+.vcard:hover { border-color: color-mix(in srgb, var(--gold) 55%, transparent); background: var(--panel); transform: translateY(-6px); box-shadow: 0 30px 50px -28px rgba(0,0,0,.7); }
+.vcard__ic { width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center; background: color-mix(in srgb, var(--crimson) 20%, transparent); color: var(--crimson-2); transition: background .35s, color .35s; }
+.vcard:hover .vcard__ic { background: var(--crimson); color: #fff; }
+.vcard__ic svg { width: 30px; height: 30px; }
+.vcard h3 { font-family: var(--kn); font-weight: 700; font-size: clamp(1.25rem, 2.4vw, 1.6rem); color: var(--bone); }
+.vcard p { font-family: var(--knb); font-size: .98rem; line-height: 1.75; color: var(--bone-3); }
+
+.cta-band { position: relative; overflow: hidden; margin-top: clamp(4rem, 8vw, 6.5rem); border-radius: 20px;
+  background: linear-gradient(120deg, var(--panel) 0%, var(--ink-2) 100%); border: 1px solid var(--line);
+  padding: clamp(2.4rem, 5vw, 4.5rem); display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; justify-content: space-between; }
+.cta-band__t { flex: 1 1 26rem; }
+.cta-band__t h2 { font-family: var(--kn); font-weight: 800; font-size: clamp(1.6rem, 3.4vw, 2.4rem); line-height: 1.2; color: var(--gold-2); }
+.cta-band__t p { font-family: var(--knb); color: var(--bone-2); margin-top: .9rem; max-width: 40rem; }
+.cta-band__ic { position: absolute; right: -1.5rem; bottom: -2.5rem; z-index: 0; color: var(--bone); opacity: .05; pointer-events: none; }
+.cta-band__ic svg { width: 220px; height: 220px; }
+.cta-band .btn { z-index: 1; }
+
 /* ---------- President ---------- */
 .pres { background: var(--ink-2); border-block: 1px solid var(--line); }
 .pres__grid { display: grid; grid-template-columns: 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
