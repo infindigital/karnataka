@@ -11,10 +11,10 @@
   --bone: #F4EEE2;
   --bone-2: #D9CEBC;
   --bone-3: #9A8E7B;
-  --crimson: #D01E24;
-  --crimson-2: #F0474C;
-  --gold: #E7B53C;
-  --gold-2: #F6D27A;
+  --crimson: #C62828;
+  --crimson-2: #EF5350;
+  --gold: #FFD700;
+  --gold-2: #FFE259;
   --line: rgba(244, 238, 226, .12);
   --line-2: rgba(244, 238, 226, .06);
 
@@ -75,7 +75,7 @@ body::after {
   transition: transform .3s var(--e-out), box-shadow .3s var(--e-out);
 }
 .pill::before { content: ""; position: absolute; inset: 0; background: var(--gold-2); transform: translateY(101%); transition: transform .4s var(--e-out); z-index: -1; }
-.pill:hover { transform: translateY(-2px); box-shadow: 0 10px 26px -8px rgba(231,181,60,.6); } .pill:hover::before { transform: translateY(0); }
+.pill:hover { transform: translateY(-2px); box-shadow: 0 10px 26px -8px rgba(255,215,0,.55); } .pill:hover::before { transform: translateY(0); }
 .burger { display: grid; gap: 5px; padding: 8px; }
 .burger span { width: 22px; height: 2px; background: var(--bone); display: block; transition: transform .3s var(--e-out), opacity .3s; }
 .burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -130,7 +130,7 @@ body::after {
 .hcta { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2.4rem; }
 .btn--gold { background: var(--gold); color: var(--ink); font-weight: 700; }
 .btn--gold::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--gold-2); transform: translateY(101%); transition: transform .45s var(--e-out); }
-.btn--gold:hover { transform: translateY(-3px); box-shadow: 0 16px 34px -12px rgba(231,181,60,.55); } .btn--gold:hover::before { transform: translateY(0); } .btn--gold:hover svg { transform: translateX(4px); }
+.btn--gold:hover { transform: translateY(-3px); box-shadow: 0 16px 34px -12px rgba(255,215,0,.5); } .btn--gold:hover::before { transform: translateY(0); } .btn--gold:hover svg { transform: translateX(4px); }
 .btn--glass { border: 1.5px solid rgba(244,238,226,.3); color: var(--bone); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
 .btn--glass:hover { border-color: var(--bone); transform: translateY(-3px); }
 
@@ -163,7 +163,7 @@ body::after {
 .btn svg { width: 18px; height: 18px; transition: transform .35s var(--e-out); }
 .btn--fill { background: var(--crimson); color: #fff; }
 .btn--fill::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--crimson-2); transform: translateY(101%); transition: transform .45s var(--e-out); }
-.btn--fill:hover { transform: translateY(-3px); box-shadow: 0 16px 34px -12px rgba(208,30,36,.7); } .btn--fill:hover::before { transform: translateY(0); } .btn--fill:hover svg { transform: translateX(4px); }
+.btn--fill:hover { transform: translateY(-3px); box-shadow: 0 16px 34px -12px rgba(198,40,40,.6); } .btn--fill:hover::before { transform: translateY(0); } .btn--fill:hover svg { transform: translateX(4px); }
 .btn--ghost { border: 1px solid var(--line); color: var(--bone); }
 .btn--ghost:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-3px); }
 .hero__meta { display: flex; flex-wrap: wrap; gap: clamp(1.5rem, 4vw, 3.4rem); margin-top: clamp(2.4rem, 5vw, 3.6rem); padding-top: 1.6rem; border-top: 1px solid var(--line); }
